@@ -1,0 +1,449 @@
+<map><party length="0"> </party><player dexterity="1" strength="1" name="Hero" level="1" attack2="12" endurance="5" playerxp="0" wallet="0" score="0" health="100" Nextlvl="25" attack1="25" room="0"><item name="pocket lint"></item></player><player dexterity="1" strength="1" name="Princess" level="1" attack2="12" endurance="1" playerxp="0" health="100" Nextlvl="25" attack1="12" room="0">
+        </player><player dexterity="1" strength="1" name="Sprite" level="1" attack2="12" endurance="1" playerxp="0" health="100" Nextlvl="25" attack1="12" room="0">
+        </player><building room="Waterfall"><room_name>Waterfall</room_name><text>You are at the Poto's Waterfall. You spent countless hours playing here as a kid.</text><event> </event><exit locked="True" name="Waterfall Basin" req="rusty sword" link="Waterfall Basin" hidden="False" dir="west"></exit><item name="rusty sword">A Rusty Sword...Whats a sword doing in a place like this/</item><party member="0"> </party></building><building room="Flamie"><room_name>Flamie</room_name><text>On Flammies back, you can go almost anywhere in the world.</text><exit link="Pandora" req="None" locked="False" name="Pandora" dir="north"> </exit><exit link="Gold Island" req="None" locked="False" name="Gold Island" dir="east"> </exit><exit link="Lost Continent" req="gold seed" locked="True" name="Lost Continent" dir="north"> </exit><exit link="Mana Fortress" req="tree seed" locked="True" name="Mana Fortress" dir="south"> </exit></building><building room="Waterfall Basin" monster_chance="10"><room_name>Waterfall Basin </room_name><text>The basin of the waterfall, legend has it that the mana sword was placed here after the great war.</text><exit link="Waterfall" req="None" locked="False" name="Waterfall" dir="east"></exit><exit link="Rabite Forest" req="None" locked="False" name="Rabite Forest" dir="west"></exit><item name="candy">Heals the player to full health.</item></building><building room="Rabite Forest" monster_chance="10"><room_name>Rabite Forest </room_name><text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text><exit link="Waterfall Basin" req="None" locked="False" name="Waterfall Basin" dir="east"></exit><exit link="Rabite Forest 1" req="None" locked="False" name="Rabite Forest 1" dir="west"></exit><monster name="Rabite" gold="5" damage="6" boss="False" score="10" health="100" exp="63"> A Rabite appears in front of you </monster></building><building room="Rabite Forest 1" monster_chance="10"><room_name>Rabite Forest South East</room_name><text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text><exit link="Rabite Forest" req="None" locked="False" name="Rabite Forest" dir="east"></exit><exit link="Rabite Forest 2" req="None" locked="False" name="Rabite Forest 2" dir="west"></exit></building><building room="Rabite Forest 2" monster_chance="55"><room_name>Country Road</room_name><text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text><exit link="Rabite Forest 1" req="None" locked="False" name="Rabite Forest 1" dir="east"> </exit><exit link="Rabite Forest 3" req="None" locked="False" name="Rabite Forest 3" dir="west"> </exit></building><building room="Rabite Forest 3"><room_name>Rabite Forest South West</room_name><text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text><exit link="Rabite Forest 2" req="None" locked="False" name="Rabite Forest 2" dir="east"> </exit><exit link="Rabite Forest 4" req="None" locked="False" name="Rabite Forest 4" dir="north"> </exit><monster name="Rabite" gold="5" damage="6" boss="False" score="10" health="100" exp="63"> A Rabite appears in front of you </monster></building><building room="Rabite Forest 4"><room_name>"Rabite Forest West </room_name><text>Good, I am getting close to town</text><exit link="Rabite Forest 3" req="None" locked="False" name="Rabite Forest 3" dir="south"> </exit><exit link="Rabite Forest 5" req="None" locked="False" name="Rabite Forest 5" dir="north"> </exit></building><building room="Rabite Forest 5"><room_name>"Rabite Forest North West </room_name><text>Nearly back in town, what is driving the Rabites so crazy?.</text><exit link="Rabite Forest 4" req="None" locked="False" name="Rabite Forest 4" dir="south"> </exit><exit link="Potos Village" req="None" locked="False" name="Potos Village" dir="east"> </exit><monster name="Rabite" gold="5" damage="6" boss="False" score="10" health="100" exp="200"> A Rabite appears in front of you </monster></building><building room="Potos Village"><room_name>Potos Village</room_name><text>Potos Village, things seem more tense now than they ever have before.</text><exit link="Rabite Forest 5" req="None" locked="False" name="Rabite Forest 5" dir="west"> </exit><exit link="Potos Inn" req="None" locked="False" name="Potos Inn" dir="east"> </exit><exit link="Potos Elders House" req="None" locked="False" name="Potos Elders House" dir="north"> </exit><exit link="Path to Pandora" req="exile orders" locked="True" name="Path to Pandora" dir="south"> </exit><town_text>Elder: Hero! You're not hurt! They just told me what happened.
+
+Elliot: I thought you were a goner.
+
+Timothy: I told you it was stupid to bring someone like HIM along.
+
+Elder: You idiots! Weren't you told not to go there? Huh? Hero! What's
+that you have? Oh, no! It couldn't be.
+
+Elliot: Cool! Did you find the treasure?
+
+Timothy: Way to go!
+
+Elder: What have you done?! How could YOU have pulled out the Mana Sword?
+It's impossible.
+
+Timothy: THE Mana Sword?! Legend has it that our village is finished.
+
+Elder: If the sword is removed, And here it is! It is said that the Mana
+Sword has been  protecting our village from disaster.
+
+Elliot: So that's it! That's why all the monsters are attacking us now! How
+could an outsider like you yank out the sword and bring doom to us all!!.
+(Elliot hits Hero)
+
+Hero: Hey! Stop it!.
+
+Elliot: YOU did it!.
+
+Elliot: It's all your fault!.
+
+Elliot: You!.
+
+Hero: Please, stop!.
+
+Waaah!  Earthquake!
+
+      ,D?I??I????D    ,,7D+,,,O,,,   ,,,,      ,:,
+    ,+??+????++?, ,,,DD8NN$,N,::=N,,$++?++= ,~=,:Z,7NNN,,    ,+ION8,,,
+  ,,=?++???????8   :O,,+8$D:~,OD,,:=~=+?II+::+,7:~ND7OZZZZ,,  ,$I?++??$,,,,
+   ++=7???+++??,  ,,,,+,,,,O~N,,$I$N?+I??I87D$IID~~N,,+,,,,,  ,=++++++++N
+ ,+O,,  ,,?+?D,  ~,NNDDDN,,,,,,:=?=?++II7D=+,Z,O=,,,~88O8,,  ,D++++?+++++,,
+,,,, =Z~O??8,  +D8DNN,,O8,$,:+?I+??I??I$??~O,,,8,O8OOOZ88,  ,8++++ZNNI++=,
+,,,,     ,O++?I,  D7$D8?I7,,,?N8?+I++IIIIIDNI?N:8N,,8DMNNDDO,  ,?+,,,,,,,,Z+
+           ,D++?8,,IID7?II:::8N78I?~??+II7+8+I$NO,,D,I??DD88,,,?+++++,,    ,ND,,
+           ,,7+++I8,,+II7D,,=D$$$ZZN??7I7??87$7$D8,,,I?I=~$,,Z+++M,, ,       O,,
+           , ,++++?II7?7D,7$I77I7ZI++N?I7?++8N,,NZ+,,:?IIDNI++++,, ,         ,,,
+           ,D+++++?,,  ,,DI$77$D?Z$$$7$7Z+D,ZO,877I,,?+D?++++,,,           ,,
+         ,   ,,N+++??,     ,,?$$$7NZ7$ZZ77NZOD8NID?I,,,,,?+++=,
+              , ,,ND,,,      ,NODONZ?+O?+D+87D,,D$7 ,,,  +++N, ,
+                  , ,:8      Z88O,8$$++++??+?I,,,,,,N,,  ,,,,
+                    ,I7 ,   ,D8D?D8N?++++???~,,,:8,,?:,
+                  ,,I7I$,,,,$+?77OZZ$ZNNNI,,DI?????DI??
+                  ,M77$7Z$N??I777OO,,,7$I8D,,I7?77??IIZ
+                  ,II77II?ZZ87NN,,,,,,,8?=~NO88N$$$7?7~
+                  ,D7III7Z7I7O ,$,,OO,,,$8D88DN$77$I?IZ,
+                   ,7III7I$$I7 ,,,,,,,+OZ,,,=,,Z77N7NIO,,
+                    ,+?DDNNIZZD,  ,7O$?IN,,,  ,ZI$I+7?D,,
+                    ,,8INDI7ZOI?O,,,,,8,8,,,,?$NZNI+?I?,,
+                  ,,,D=IN??7,,,,,N8D88888D88ONDD8NI???$II,,
+                  ,I+8+?+7I8888D888DD888D88OO8DNNOIN7+?+I~
+                  ,+=+8OODDO88DNDNNDDD8O8O8DO         ,D,,
+                      ,,                                                      </town_text><monster name="Boss Mantis Ant" gold="450" damage="26" boss="True" score="200" health="300" exp="450"> A monster bigger than the rest, much more powerful appears in front of you. </monster><monster_text>Village Elder: Why atr </monster_text></building><building room="Potos Inn"><room_name>Potos Inn</room_name><text>The smell of cloves fill the air. A cheery tune is coming from a music box in the corner.</text><exit link="Potos Village" req="None" locked="False" name="Potos Village" dir="west"> </exit></building><building room="Potos Elders House"><room_name>Potos Elders House</room_name><text>My childhood home. The village elder adopted me after my mother passed away</text><exit link="Potos Village" req="None" locked="False" name="Potos Village" dir="south"> </exit><item name="exile orders">Orders barring me from town...I guess they are kicking me out...</item><town_text>
+
+Villager: Elder! We can't go on like this.
+
+Villager: Yeah! There's no end in sight.
+
+Elder: Oh, Hero! You've really done it to me this time! The reason why
+monsters have appeared is because you removed the sword.
+
+Villager: It's settled, We can't let Hero stay in the village anymore.
+
+Villager: If we do, more monsters will come after him.
+
+Villagers: Go! Get out of here! Yeah, on your way now.
+
+Elder: I don't want to do this, but I have no choice, I'm going to have to
+ask you to leave the village, You can take what's in the treasure
+chest downstairs.
+
+Elder: I took you in and I raised you, But there's nothing I can do to help,
+Please forgive me, I know I've told you this before, but Your
+mother brought you to this village when you were just a baby, Soon
+afterwards, she disappeared, I took you and have done my best to
+raise you, But now we must part, I truly hope you can find your mother
+someday, Good bye, Hero.
+
+Elder: I took you in and I raised you, But there's nothing I can do to help,
+Please forgive me.
+
+Gatekeeper: You are hereby banished from Potos Village, Now, get out of here!</town_text></building><building room="Path to Pandora"><room_name>Path to Pandora</room_name><text>You are standing at the edge of a great forest. Pandora is quite a journey, but what other choice have you got?</text><exit link="Pandoran Forest 1" req="None" locked="False" name="Pandoran Forest 1" dir="south"> </exit><monster name="Lullabud" gold="5" damage="12" boss="False" score="10" health="160" exp="22"> </monster></building><building room="Pandoran Forest 1"><room_name>Pandoran Forest</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Path to Pandora" req="None" locked="False" name="Path to Pandora" dir="north"> </exit><exit link="Pandoran Forest 2" req="None" locked="False" name="Pandoran Forest 2" dir="south"> </exit><monster name="Mushboom" gold="5" damage="13" boss="False" score="10" health="175" exp="24"> </monster></building><building room="Pandoran Forest 2"><room_name>Pandoran Forest North West</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 1" req="None" locked="False" name="Pandoran Forest 1" dir="north"> </exit><exit link="Pandoran Forest 3" req="None" locked="False" name="Pandoran Forest 3" dir="west"> </exit></building><building room="Pandoran Forest 3"><room_name>Pandoran Forest North</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 2" req="None" locked="False" name="Pandoran Forest 2" dir="east"> </exit><exit link="Pandoran Forest 4" req="None" locked="False" name="Pandoran Forest 4" dir="west"> </exit><monster name="Mushboom" gold="5" damage="13" boss="False" score="10" health="175" exp="24"> </monster></building><building room="Pandoran Forest 4"><room_name>Pandoran Forest North East</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><item name="candy">Heals the player to full health.</item><exit link="Pandoran Forest 3" req="None" locked="False" name="Pandoran Forest 3" dir="east"> </exit><exit link="Pandoran Forest 5" req="None" locked="False" name="Pandoran Forest 5" dir="south"> </exit><exit link="Water Palace Exterior" req="None" locked="False" name="Water Palace Exterior" dir="west"> </exit></building><building room="Water Palace Exterior"><room_name>Water Palace </room_name><text>The majestic Water Palace, home of the Water Seed.</text><exit link="Pandoran Forest 4" req="None" locked="False" name="Pandoran Forest 4" dir="east"> </exit><exit link="Water Palace Interior" req="None" locked="False" name="Water Palace Interior" dir="north"> </exit><monster name="Boss Fishboom" gold="5" damage="35" boss="True" score="250" health="600" exp="350"> </monster></building><building room="Water Palace Interior"><room_name>Water Palace </room_name><text>The majestic Water Palace, home of the water seed.</text><exit link="Water Palace Exterior" req="None" locked="False" name="Water Palace Exterior" dir="south"> </exit><item name="water seed">The water seed... one of the eight seeds I need to repower the Mana Sword.</item><town_text>Luka: My, my, looks like you have the Mana Sword! How interesting. Ho ho ho!
+
+Jema: Luka, monsters are invading villages. He just fought one!
+
+Luka: I know. The ebb and flow of water brings me news from around the world,
+Mana's power is growing weak, That's why this boy was able to take the
+sword, When he did, the balance of Mana in this area shifted, and
+monsters revived, There are evil monsters working to steal away the power
+of the Mana Sword, By defeating those evil monsters, you can restore the
+Sword's Mana power, The power is kept in orbs, Looks like it regained
+some power from the Mantis Ant, There must be more hidden orbs which hold
+Mana power for the Sword, And you must find someone who can forge the
+sword to release its stored power.
+
+Jema: Once I was one of Luka's followers. I studied the power of Mana, which
+sustains everything in this world.
+
+Luka: Jema, watch out for the Empire, It seeks to Obtain the Mana Fortress.
+
+Hero: You mean the one that destroys the world in that fairy tale?
+
+Jema: That's no fairy tale, The Empire is trying to awaken it.
+
+Luka: The Empire is trying to unlock the seals from the world's Mana Seeds, A
+bunch of strangers have already started snooping around this palace!
+
+Jema: Something is very wrong in Pandora, Could the Empire be involved?
+
+Luka: I don't know, Jema, see the king of Pandora and tell him to be
+cautious.
+
+Jema: Right, I'm on my way, Hero, you go to the cave called Gaia's Navel, Legend has it a
+Mana seed is kept in its depths.</town_text></building><building room="Pandoran Forest 5"><room_name>Pandoran Forest East</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 4" req="None" locked="False" name="Pandoran Forest 4" dir="north"> </exit><exit link="Pandoran Forest 6" req="None" locked="False" name="Pandoran Forest 6" dir="south"> </exit><monster name="Mushboom" gold="5" damage="13" boss="False" score="10" health="175" exp="24"> </monster></building><building room="Pandoran Forest 6"><room_name>Pandoran Forest South East</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 5" req="None" locked="False" name="Pandoran Forest 5" dir="north"> </exit><exit link="Pandoran Forest 7" req="None" locked="False" name="Pandoran Forest 7" dir="east"> </exit></building><building room="Pandoran Forest 7"><room_name>Pandoran Forest South</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 6" req="None" locked="False" name="Pandoran Forest 6" dir="west"> </exit><exit link="Pandoran Forest 8" req="None" locked="False" name="Pandoran Forest 8" dir="east"> </exit><monster name="Mushboom" gold="5" damage="13" boss="False" score="10" health="175" exp="24"> </monster></building><building room="Pandoran Forest 8"><room_name>Pandoran Forest South West</room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 7" req="None" locked="False" name="Pandoran Forest 7" dir="west"> </exit><exit link="Pandoran Forest 9" req="None" locked="False" name="Pandoran Forest 9" dir="north"> </exit></building><building room="Pandoran Forest 9"><room_name>Pandoran Forest West </room_name><text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text><exit link="Pandoran Forest 8" req="None" locked="False" name="Pandoran Forest 8" dir="south"> </exit><exit link="Pandora" req="water seed" locked="True" name="Pandora" dir="west"> </exit><monster name="Mushboom" gold="5" damage="13" boss="False" score="10" health="175" exp="24"> </monster></building><building room="Pandora"><room_name>Pandora </room_name><text>Pandora is a small town near a river. I have only been a few times.</text><exit link="Pandoran Forest 9" req="None" locked="False" name="Pandoran Forest 9" dir="east"> </exit><exit link="Pandora Inn" req="None" locked="False" name="Pandora Inn" dir="north"> </exit><exit link="Pandora Shrine Exterior" req="earth seed" locked="True" name="Pandora Shrine Exterior" dir="south"> </exit><exit link="Gaias Navel Forest" req="None" locked="False" name="Gaias Navel Forest" dir="west"> </exit></building><building room="Pandora Inn"><room_name>Pandora Inn</room_name><text>A cozy inn near the center of town.</text><exit link="Pandora" req="None" locked="False" name="Pandora" dir="south"> </exit></building><building room="Pandora Shrine Exterior"><room_name>Pandora </room_name><text>A forbidden shrine. I wonder what goes on here?</text><exit link="Pandora" req="None" locked="False" name="Pandora" dir="north"> </exit><exit link="Pandora Shrine Hall" req="None" locked="False" name="Pandora Shrine Hall" dir="south"> </exit><monster name="Death Wall" gold="5" damage="25" boss="True" score="350" health="666" exp="1000"> </monster><town_text>
+Hero: Thanatos, I presume?
+
+Thanatos: Indeed, I know all about you. You're no ordinary fool if you managed to get the Water Seed.
+
+Thanatos:Soon the Mana Fortress will bring the people of the world
+together! Surrender, and you can serve me, Don't, and you'll end up
+like HIM!</town_text></building><building room="Pandora Shrine Hall"><room_name>Path to Gaias Navel </room_name><text>The path to Gaias Navel.</text><exit link="Pandora Shrine Interior" req="None" locked="False" name="Pandora Shrine Interior" dir="east"> </exit><exit link="Pandora Shrine Exterior" req="None" locked="False" name="Pandora Shrine Exterior" dir="west"> </exit><party member="2"> </party><town_text>Princess: Dyluck!!
+Thanatos: He was a tough one, I see Elinee had a hard time with him, too, He
+must be receiving some kind of special power, Great find, huh? And
+you can join him now!.
+Princess: Let me come with you, we have to stop this psycho.
+
+        </town_text></building><building room="Pandora Shrine Interior"><room_name>Pandora </room_name><text>A forbidden shrine. I wonder what goes on here?.</text><exit link="Pandora Shrine Hall" req="None" locked="False" name="Pandora Shrine Hall" dir="north"> </exit><item name="travel pass">A Travel pass to get to the upperlands.</item><town_text>
+Jema: Oh, Hero! Sorry, I was spacing out! Thanatos was one of their best men,
+They must be desperate to get Mana.
+
+Why was he taking the life energy away from the people here? The Empire only needs power from the
+seeds, not from the people, There's something, curious about
+Thanatos,  I've got a bad feeling about him. Anyway, let's get out of
+here!
+        </town_text></building><building room="Gaias Navel Forest"><room_name>Path to Gaias Navel </room_name><text>The path to Gaias Navel.</text><exit link="Pandora" req="None" locked="False" name="Pandora" dir="east"> </exit><exit link="Gaias Navel Forest 2" req="None" locked="False" name="Gaias Navel Forest 2" dir="west"> </exit><monster name="Buzz Bee" gold="5" damage="9" boss="False" score="10" health="220" exp="45"> </monster></building><building room="Gaias Navel Forest 2"><room_name>Road to Gaias Navel</room_name><text>The road to Gaias Navel passes through a thick forest.</text><exit link="Gaias Navel Forest" req="None" locked="False" name="Gaias Navel Forest" dir="east"> </exit><exit link="Gaias Navel" req="None" locked="False" name="Gaias Navel" dir="west"> </exit><exit link="Cannon Travel Service" req="None" locked="False" name="Cannon Travel Service" dir="south"> </exit></building><building room="Gaias Navel"><room_name>Gaias Navel</room_name><text>You are standing in front of Gaias Navel, a huge cave system... I wonder how deep it is?</text><exit link="Gaias Navel Forest 2" req="None" locked="False" name="Gaias Navel Forest 2" dir="east"> </exit><exit link="Gaias Navel Interior Passage" req="None" locked="False" name="Gaias Navel Interior Passage" dir="west"> </exit></building><building room="Gaias Navel Interior Passage"><room_name>Gaias Navel</room_name><text>Inside Gaias Navel, you truly begin to understand how huge it is.</text><exit link="Gaias Navel" req="None" locked="False" name="Gaias Navel" dir="east"> </exit><exit link="Gaias Navel Interior" req="None" locked="False" name="Gaias Navel Interior" dir="west"> </exit><item name="candy">Heals the player to full health.</item><monster name="Buzz Bee" gold="5" damage="9" boss="False" score="10" health="220" exp="45"> </monster></building><building room="Gaias Navel Interior"><room_name>Gaias Navel</room_name><text>Inside Gaias Navel, you truly begin to understand how huge it is.</text><exit link="Gaias Navel Interior Passage" req="None" locked="False" name="Gaias Navel Interior Passage" dir="east"> </exit><exit link="Dwarf Village" req="None" locked="False" name="Dwarf Village" dir="west"> </exit></building><building room="Dwarf Village"><room_name>Gaias Navel</room_name><text>I can't believe an entire town is underground.</text><exit link="Gaias Navel Interior" req="None" locked="False" name="Gaias Navel Interior" dir="east"> </exit><exit link="Dwarf Village Inn" req="None" locked="False" name="Dwarf Village Inn" dir="west"> </exit><exit link="Earth Dungeon" req="None" locked="False" name="Earth Dungeon" dir="south"> </exit><town_text> Randi: What on earth! Something's coming!</town_text><monster name="Tropicallo" gold="5" damage="24" boss="True" score="250" health="750" exp="500"> </monster></building><building room="Dwarf Village Inn"><room_name>Dwarf Village Inn</room_name><text>A cozy inn near the center of town.</text><exit link="Dwarf Village" req="None" locked="False" name="Dwarf Village" dir="east"> </exit></building><building room="Earth Dungeon"><room_name>Gaias Navel</room_name><text>This must be the Earth Dungeon of legend.</text><exit link="Dwarf Village" req="None" locked="False" name="Dwarf Village" dir="north"> </exit><exit link="Earth Dungeon Hall" req="None" locked="False" name="Earth Dungeon Hall" dir="south"> </exit><party member="1"> </party><town_text>
+
+Elder: Thank you very much!.
+
+Sprite: I didn't need your help!.
+
+Elder: Hey! Sorry about that, This child received such a shock from drifting
+here, it lost all its memories, It really is a nice child, It plays
+tricks on people sometimes though.
+
+Sprite: Come on old timer! Give me a break. Take it easy!.
+
+Elder: Tropicalla broke out of a sealed palace. there must be a way into it!.
+Your memory might return if you receive some power from the Mana Seed.
+
+Sprite: What? Really? I'll go now, right now!!!.
+
+Elder: Not alone! The palace was buried. There must be tons of monsters by
+now, Would you be so kind as to accompany this sprite to the palace?
+What luck! Dod you hear that, little one?.
+
+Sprite: Hey, "brother!".
+
+Hero: "Brother?" My NAME is Hero!.</town_text></building><building room="Earth Dungeon Hall"><room_name>Gaias Navel</room_name><text>This must be the Earth Dungeon of legend.</text><exit link="Earth Dungeon" req="None" locked="False" name="Earth Dungeon" dir="north"> </exit><exit link="Earth Dungeon Seed Room" req="None" locked="False" name="Earth Dungeon Seed Room" dir="south"> </exit><monster name="Goblin" gold="5" damage="21" boss="False" score="10" health="225" exp="45"> </monster></building><building room="Earth Dungeon Seed Room"><room_name>Gaias Navel</room_name><text>This must be the Earth Dungeon of legend.</text><exit link="Earth Dungeon Hall" req="None" locked="False" name="Earth Dungeon Hall" dir="north"> </exit><monster name="Fire Gigas" gold="5" damage="21" boss="True" score="300" health="1000" exp="950"> </monster><item name="earth seed">The Earth Seed... one of the eight seeds I need to repower the Mana Sword.</item></building><building room="Cannon Travel Service"><room_name>Gaias Navel</room_name><text>The fastest way to travel in the kingdom of Pandora.</text><exit link="Upperland Village" req="travel pass" locked="True" name="Upperland Village" dir="north"> </exit><exit link="Gaias Navel Forest 2" req="None" locked="False" name="Gaias Navel Forest 2" dir="south"> </exit></building><building room="Upperland Village"><room_name>Upperland</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Upperland 1" req="None" locked="False" name="Upperland 1" dir="north"> </exit><exit link="Mantango" req="thunder seed" locked="True" name="Mantango" dir="east"> </exit><monster name="Pebbler" gold="5" damage="35" boss="False" score="10" health="350" exp="75"> </monster><town_text>Hero: Sprite, your home's here in the Great Forest, right? Lead on!
+
+Sprite: Um, Huh? I hit my head again when we landed.
+
+Princess: Lovely, this might take a while.</town_text></building><building room="Upperland 1"><room_name>Upperland</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Upperland Village" req="None" locked="False" name="Upperland Village" dir="south"> </exit><exit link="Upperland 2" req="None" locked="False" name="Upperland 2" dir="west"> </exit></building><building room="Upperland 2"><room_name>Upperland North West</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Upperland 1" req="None" locked="False" name="Upperland 1" dir="east"> </exit><exit link="Thunder Palace" req="None" locked="False" name="Thunder Palace" dir="west"> </exit></building><building room="Thunder Palace"><room_name>Thunder Palace</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Upperland 2" req="None" locked="False" name="Upperland 2" dir="east"> </exit><exit link="Thunder Palace Seed Room" req="None" locked="False" name="Thunder Palace Seed Room" dir="north"> </exit><monster name="Boss Jabberwocky" gold="5" damage="42" boss="True" score="350" health="1500" exp="450"> </monster></building><building room="Thunder Palace Seed Room"><room_name>Thunder Palace</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Thunder Palace" req="None" locked="False" name="Thunder Palace" dir="south"> </exit><item name="thunder seed">The third seed needed to repower the Mana Sword.</item></building><building room="Mantango"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Upperland" req="None" locked="False" name="Upperland" dir="west"> </exit><exit link="Mantango Caves" req="None" locked="False" name="Mantango Caves" dir="north"> </exit><item name="candy">Heals the player to full health.</item><exit link="Mantango Canon Travel Service" req="None" locked="False" name="Mantango Canon Travel Service" dir="east"> </exit><town_text>
+Truffle: Here at last! The legendary knight!
+
+Hero: ?
+
+Truffle: You don't think we have legends here like everywhere else?!
+
+                  Riding a white dragon, and
+                   wielding The Sword, they
+                    shall save the world.
+
+Truffle: That's you guys, right? I knew it right away! Just yesterday one of
+my people saw a white dragon fighting a huge snake! Go save it!
+</town_text></building><building room="Mantango Caves"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango" req="None" locked="False" name="Mantango" dir="south"> </exit><exit link="Mantango Caves 2" req="None" locked="False" name="Mantango Caves 2" dir="north"> </exit><monster name="Pebbler" gold="5" damage="35" boss="False" score="10" health="500" exp="75"> </monster></building><building room="Mantango Caves 2"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango Caves" req="None" locked="False" name="Mantango Caves" dir="south"> </exit><exit link="Mantango Caves 3" req="None" locked="False" name="Mantango Caves 3" dir="north"> </exit></building><building room="Mantango Caves 3"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango Caves 2" req="None" locked="False" name="Mantango Caves 2" dir="south"> </exit><exit link="Mantango Caves 4" req="None" locked="False" name="Mantango Caves 4" dir="north"> </exit><monster name="Pebbler" gold="5" damage="35" boss="False" score="10" health="500" exp="75"> </monster></building><building room="Mantango Caves 4"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango Caves 3" req="None" locked="False" name="Mantango Caves 3" dir="south"> </exit><exit link="Mantango Caves 5" req="None" locked="False" name="Mantango Caves 5" dir="north"> </exit></building><building room="Mantango Caves 5"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango Caves 4" req="None" locked="False" name="Mantango Caves 4" dir="south"> </exit><exit link="Mantango Caves 6" req="None" locked="False" name="Mantango Caves 6" dir="north"> </exit><monster name="Great Viper" gold="350" damage="35" boss="True" score="10" health="1650" exp="3500"> </monster></building><building room="Mantango Caves 6"><room_name>Mantango</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><item name="gun powder">Extra gun powder for the Matango Cannon Travel, we should be able to get to the desert with this.</item><exit link="Mantango Caves 5" req="None" locked="False" name="Mantango Caves 5" dir="south"> </exit><town_text> THIS is the legendary white dragon? Its parents must have been beaten by that
+serpent.
+
+Princess: it won't make it if we leave it here. It's way too big for us to
+     carry! Let's ask Truffle.
+
+(Back in Throne Room)
+
+Truffle: He'll only slow you down, so I'll raise him!
+
+Nobleman: King Truffle!
+
+Truffle: QUIET, you! You three get going. I'll take good care of him! By the
+      way, how do you like the name "Flammie?"
+
+ ( Ugh! Not bad! )
+
+Truffle: Hang on! I sound like an idiot! You'd agree with me whether you
+liked the name or not! So let's call him "Flammie" and be done with
+it! Cannon Travel is open again in the forest to the south. You'll
+find the Fire Palace somewhere in the Desert of Kakkara.
+
+        </town_text></building><building room="Mantango Canon Travel Service"><room_name>Mantango Canon Travel Service</room_name><text>The upperland is nothing but forest as far as the eye can see.</text><exit link="Mantango" req="None" locked="False" name="Mantango" dir="west"> </exit><exit link="Kakkaran Desert Outskirts of Town" req="gun powder" locked="True" name="Kakkaran Desert Outskirts of Town" dir="north"> </exit></building><building room="Kakkara"><room_name>Kakkara</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkara Inn" req="None" locked="False" name="Kakkara Inn" dir="north"> </exit><exit link="Kakkara Canon Travel Service" req="None" locked="False" name="Kakkara Canon Travel Service" dir="west"> </exit><exit link="Kakkaran Desert Outskirts of Town" req="None" locked="False" name="Kakkaran Desert Outskirts of Town" dir="south"> </exit></building><building room="Kakkara Inn"><room_name>Kakkara Inn</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkara" req="None" locked="False" name="Kakkara" dir="south"> </exit></building><building room="Kakkara Canon Travel Service"><room_name>Kakkara Canon Travel Service</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkara" req="None" locked="False" name="Kakkara" dir="east"> </exit><exit link="Mantango" req="None" locked="False" name="Mantango" dir="south"> </exit><exit link="Pandora" req="None" locked="False" name="Pandora" dir="west"> </exit><exit link="The Lofty Mountains" req="fire seed" locked="True" name="The Lofty Mountains" dir="north"> </exit></building><building room="Kakkaran Desert Outskirts of Town"><room_name>Kakkaran Desert</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkara" req="None" locked="False" name="Kakkara" dir="north"> </exit><exit link="Kakkaran Dessert North" req="None" locked="False" name="Kakkaran Dessert North" dir="south"> </exit><town_text>Sprite: Pfepp, pfepp! Ick, covered with sand!
+
+Princess: What a barren place.
+Hero: Let's find a town before we shrivel up!.
+
+Sprite: Throat's, so dry, can't go on!
+Hero: We're finished.
+Princess: Look! Over there! Hurry!</town_text><monster name="Chobin Hood" gold="5" damage="25" boss="False" score="10" health="300" exp="150"> </monster></building><building room="Kakkaran Dessert North"><room_name>Kakkaran Dessert North</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkaran Desert Outskirts of Town" req="None" locked="False" name="Kakkaran Desert Outskirts of Town" dir="north"> </exit><exit link="Kakkaran Desert Central" req="None" locked="False" name="Kakkaran Desert Central" dir="south"> </exit><monster name="Chobin Hood" gold="5" damage="25" boss="False" score="10" health="750" exp="150"> </monster></building><building room="Kakkaran Desert Central"><room_name>Kakkaran Desert Central</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkaran Dessert North" req="None" locked="False" name="Kakkaran Dessert North" dir="north"> </exit><exit link="Kakkaran Desert South" req="None" locked="False" name="Kakkaran Desert South" dir="south"> </exit><exit link="Lunar Palace" req="dark seed" locked="True" name="Lunar Palace" dir="west"> </exit></building><building room="Lunar Palace"><room_name>Lunar Palace</room_name><text>What an odd place... No up, no down...what is going on here?</text><exit link="Kakkaran Desert Central" req="None" locked="False" name="Kakkaran Desert Central" dir="east"> </exit><exit link="Lunar Palace Exterior" req="None" locked="False" name="Lunar Palace Exterior" dir="south"> </exit><monster name="Moonblob" gold="5" damage="25" boss="False" score="10" health="750" exp="450"> </monster></building><building room="Lunar Palace Exterior"><room_name>Lunar Palace Exterior</room_name><text>What an odd place... No up, no down...what is going on here?</text><exit link="Lunar Palace" req="None" locked="False" name="Lunar Palace" dir="north"> </exit><exit link="Lunar Palace Interior" req="None" locked="False" name="Lunar Palace Interior" dir="south"> </exit></building><building room="Lunar Palace Interior"><room_name>Lunar Palace Interior</room_name><text>What an odd place... No up, no down...what is going on here?</text><exit link="Lunar Palace Exterior" req="None" locked="False" name="Lunar Palace Exterior" dir="north"> </exit><exit link="Lunar Palace Seed Room" req="None" locked="False" name="Lunar Palace Seed Room" dir="south"> </exit><monster name="Moonslime" gold="5" damage="50" boss="True" score="400" health="750" exp="20000"> </monster></building><building room="Lunar Palace Seed Room"><room_name>Lunar Palace Seed Room</room_name><text>What an odd place... No up, no down...what is going on here?</text><exit link="Lunar Palace Exterior" req="None" locked="False" name="Lunar Palace Exterior" dir="north"> </exit><item name="lunar seed">The sixth seed needed to repower the Mana Sword.</item></building><building room="Kakkaran Desert South"><room_name>Kakkaran Desert South</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkaran Desert Central" req="None" locked="False" name="Kakkaran Desert Central" dir="north"> </exit><exit link="Fire Palace Exterior" req="None" locked="False" name="Fire Palace Exterior" dir="south"> </exit><monster name="Chobin Hood" gold="5" damage="25" boss="False" score="10" health="750" exp="150"> </monster></building><building room="Fire Palace Exterior"><room_name>Fire Palace Exterior</room_name><text>What a desolate place... How can people survive here?</text><exit link="Kakkaran Desert South" req="None" locked="False" name="Kakkaran Desert South" dir="north"> </exit><exit link="Fire Palace Interior" req="None" locked="False" name="Fire Palace Interior" dir="south"> </exit></building><building room="Fire Palace Interior"><room_name>Fire Palace Interior</room_name><text>What a desolate place... How can people survive here?</text><exit link="Fire Palace Exterior" req="None" locked="False" name="Fire Palace Exterior" dir="north"> </exit><exit link="Fire Palace Seed Room" req="None" locked="False" name="Fire Palace Seed Room" dir="south"> </exit><monster name="Minotaur" gold="5" damage="80" boss="True" score="450" health="2100" exp="1200"> </monster></building><building room="Fire Palace Seed Room"><room_name>Fire Palace Seed Room</room_name><text>What a desolate place... How can people survive here?</text><exit link="Fire Palace Interior" req="None" locked="False" name="Fire Palace Interior" dir="north"> </exit><item name="fire seed">The fourth seed needed to repower the Mana Sword.</item></building><building room="The Lofty Mountains"><room_name>The Lofty Mountains</room_name><text>High up in the Lofty Mountains sits Mandala and the Dark Palace</text><exit link="Mandala" req="None" locked="False" name="Mandala" dir="north"> </exit><exit link="Dark Palace Exterior" req="None" locked="False" name="Dark Palace Exterior" dir="east"> </exit><monster name="VileFlower" gold="5" damage="45" boss="False" score="10" health="600" exp="450"> </monster></building><building room="Mandala"><room_name>Mandala</room_name><text>The town of Mandala is isolated high up in the lofty mountains.</text><exit link="The Lofty Mountains" req="None" locked="False" name="The Lofty Mountains" dir="south"> </exit><exit link="Mandala Cannon Travel Service" req="None" locked="False" name="Mandala Cannon Travel Service" dir="east"> </exit><exit link="Mandala Inn" req="None" locked="False" name="Mandala Inn" dir="west"> </exit><town_text>Little boy: Welcome to the Lofty Mountains! This is Mandala.
+Man in Purple: Go down the mountain a bit, and you'll see a cave, Monsters are
+dwelling, but it's the Palace of Darkness!
+        </town_text></building><building room="Mandala Inn"><room_name>Mandala Inn</room_name><text>Looks like a good place to REST!!!.</text><exit link="Mandala" req="None" locked="False" name="Mandala" dir="east"> </exit></building><building room="Dark Palace Exterior"><room_name>Dark Palace Exterior</room_name><text>The Dark Palace sits high up in the Lofty Mountains.</text><exit link="The Lofty Mountains" req="None" locked="False" name="The Lofty Mountains" dir="north"> </exit><exit link="Dark Palace Interior" req="None" locked="False" name="Dark Palace Interior" dir="south"> </exit><monster name="Dark Spirit" gold="5" damage="40" boss="False" score="10" health="650" exp="600"> </monster></building><building room="Dark Palace Interior"><room_name>Dark Palace Interior</room_name><text>The Dark Palace sits high up in the Lofty Mountains.</text><exit link="Dark Palace Exterior" req="None" locked="False" name="Dark Palace Exterior" dir="north"> </exit><exit link="Dark Palace Seed Room" req="None" locked="False" name="Dark Palace Seed Room" dir="south"> </exit><monster name="Vile Slime" gold="5" damage="40" boss="True" score="500" health="2250" exp="2500"> </monster></building><building room="Dark Palace Seed Room"><room_name>Dark Palace Seed Room</room_name><text>The Dark Palace sits high up in the Lofty Mountains.</text><exit link="Dark Palace Interior" req="None" locked="False" name="Dark Palace Interior" dir="north"> </exit><item name="dark seed">The fifth seed needed to repower the Mana Sword.</item></building><building room="Mandala Cannon Travel Service"><room_name>Mandala Cannon Travel Service</room_name><text>The Dark Palace sits high up in the Lofty Mountains.</text><exit link="Kakkara" req="None" locked="False" name="Kakkara" dir="north"> </exit><exit link="Gold Island" req="lunar seed" locked="True" name="Gold Island" dir="east"> </exit><exit link="Mandala" req="None" locked="False" name="Mandala" dir="west"> </exit></building><building room="Gold Island"><room_name>Gold Island</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?
+        </text><town_text>Man In Green: This is the Empire's Gold City.
+
+Old Man: Where did King Manmon find all this gold.
+
+Woman In Green: It's too expensive to live here.
+
+Woman In Purple: This whole island is made of gold.
+</town_text><exit link="Gold Island Castle" req="None" locked="False" name="Gold Island Castle" dir="north"> </exit><exit link="Gold Island Cannon Travel Service" req="gold seed" locked="True" name="Gold Island Cannon Travel Service" dir="east"> </exit><exit link="Gold Island Resistance House" req="None" locked="False" name="Gold Island Resistance House" dir="south"> </exit><exit link="Gold Island Inn" req="None" locked="False" name="Gold Island Inn" dir="west"> </exit></building><building room="Gold Island Inn"><room_name>Gold Island Inn</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Island" req="None" locked="False" name="Gold Island" dir="east"> </exit></building><building room="Gold Island Cannon Travel Service"><room_name>Gold Island Cannon Travel Service</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Lost Continent" req="None" locked="False" name="Lost Continent" dir="north"> </exit><exit link="Gold Island" req="None" locked="False" name="Gold Island" dir="west"> </exit></building><building room="Gold Island Resistance House"><room_name>Gold Island Resistance House</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Island" req="None" locked="False" name="Gold Island" dir="north"> </exit><item name="Castle Key">The key to the Gold Castle.</item></building><building room="Gold Island Castle"><room_name>Gold Island Castle</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Island Castle Exterior" req="Castle Key" locked="True" name="Gold Island Castle Exterior" dir="north"> </exit><exit link="Gold Island" req="None" locked="False" name="Gold Island" dir="south"> </exit><monster name="Dark Knight" gold="5" damage="50" boss="False" score="10" health="1000" exp="3500"> </monster></building><building room="Gold Island Castle Exterior"><room_name>Gold Island Castle Exterior</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Island Castle Interior" req="None" locked="False" name="Gold Island Castle Interior" dir="north"> </exit><exit link="Gold Island Castle" req="None" locked="False" name="Gold Island Castle" dir="south"> </exit></building><building room="Gold Island Castle Interior"><room_name>Gold Island Castle Interior</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Palace Entrance" req="None" locked="False" name="Gold Palace Entrance" dir="north"> </exit><exit link="Gold Island Castle Exterior" req="None" locked="False" name="Gold Island Castle Exterior" dir="south"> </exit><monster name="Dark Knight" gold="5" damage="50" boss="False" score="10" health="1000" exp="3500"> </monster></building><building room="Gold Palace Entrance"><room_name>Gold Palace Entrance</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Palace Hall" req="None" locked="False" name="Gold Palace Hall" dir="north"> </exit><exit link="Gold Island Castle Interior" req="None" locked="False" name="Gold Island Castle Interior" dir="south"> </exit></building><building room="Gold Palace Hall"><room_name>Gold Palace Hall</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Palace Seed Room" req="None" locked="False" name="Gold Palace Seed Room" dir="north"> </exit><exit link="Gold Palace Entrance" req="None" locked="False" name="Gold Palace Entrance" dir="south"> </exit><monster name="Aegagropilon" gold="5" damage="80" boss="True" score="550" health="2500" exp="11050"> </monster></building><building room="Gold Palace Seed Room"><room_name>Gold Palace Seed Room</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Palace Hall" req="None" locked="False" name="Gold Palace Hall" dir="south"> </exit><exit link="Gold Palace Roof" req="None" locked="False" name="Gold Palace Roof" dir="east"> </exit><item name="gold seed">The seventh seed needed to repower the Mana Sword.</item></building><building room="Gold Palace Roof"><room_name>Gold Palace Roof</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Gold Palace Seed Room" req="None" locked="False" name="Gold Palace Seed Room" dir="west"> </exit><monster name="Mech Rider" gold="5" damage="80" boss="True" score="575" health="2750" exp="12000"> </monster><item name="flammie drum">I can call Flammie, and travel anywhere.</item><town_text>Voice: Helloow!
+
+Hero: That, that's Truffle!
+
+Truffle: Am I too late? Do you want to know HOW I came here? By Flammie! He
+grew like a weed, and started to fly! I didn't know what to do, so I just
+hopped on! Strange, but he thinks you're his parents! I guess he wants to help
+you. Take this Flammie Drum. It's his favorite toy. Use it anywhere and he'll
+come to you!</town_text></building><building room="Lost Continent"><room_name>Lost Continent</room_name><text>I can't believe there is an entire island made out of gold, where did it all come from?</text><exit link="Lost Continent Camp" req="None" locked="False" name="Lost Continent Camp" dir="west"> </exit><exit link="Lost Continent Palace Exterior" req="None" locked="False" name="Lost Continent Palace Exterior" dir="north"> </exit><town_text>Jema: Hero! The sunken continent has surfaced. The Fortress is there! I've
+brought troops here to keep the Empire from taking the Mana Fortress.
+There's an ancient city under this Grand Palace. We must get into it! Emperor Vandole
+is working for the underworld.
+
+This place is full of monsters! Though your
+sword isn't fully powered, you need it to stop the Emperor! We'll fight off the
+Imperial troops here, You catch up with those soldiers.
+
+Soldier 1: Be careful!</town_text></building><building room="Lost Continent Camp"><room_name>Lost Continent Camp</room_name><text>Looks like a good place to rest.</text><exit link="Lost Continent" req="None" locked="False" name="Lost Continent" dir="east"> </exit><monster name="Gold Knight" gold="5" damage="50" boss="False" score="10" health="1000" exp="3500"> </monster></building><building room="Lost Continent Palace Exterior"><room_name>Lost Continent</room_name><text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea. </text><exit link="Lost Continent Palace Interior" req="None" locked="False" name="Lost Continent Palace Interior" dir="north"> </exit><exit link="Lost Continent" req="None" locked="False" name="Lost Continent" dir="south"> </exit></building><building room="Lost Continent Palace Interior"><room_name>Lost Continent</room_name><text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text><exit link="Lost Continent Palace Hall" req="None" locked="False" name="Lost Continent Palace Hall" dir="north"> </exit><exit link="Lost Continent Palace Exterior" req="None" locked="False" name="Lost Continent Palace Exterior" dir="south"> </exit><monster name="Gold Knight" gold="5" damage="50" boss="False" score="10" health="1000" exp="3500"> </monster></building><building room="Lost Continent Palace Hall"><room_name>Lost Continent</room_name><text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text><exit link="Lost Continent Palace Seed Room" req="None" locked="False" name="Lost Continent Palace Seed Room" dir="north"> </exit><exit link="Lost Continent Palace Interior" req="None" locked="False" name="Lost Continent Palace Interior" dir="south"> </exit><monster name="The Emperor" gold="5" damage="75" boss="True" score="2500" health="3500" exp="100000"> </monster></building><building room="Lost Continent Palace Seed Room"><room_name>Lost Continent</room_name><text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text><exit link="Lost Continent Palace Hall" req="None" locked="False" name="Lost Continent Palace Hall" dir="south"> </exit><item name="tree seed">The final seed needed to repower the Mana Sword. I can go to the Mana Fortress now.</item><town_text>(Dryad appears)
+
+Get out of here, NOW! I am Dryad, the tree spirit. The seals on the world's
+seeds have been broke, The continent that sleeps beneath this palace will
+soon rise, Leave now.
+
+Princess: What about you?
+
+Dryad: I wasn't able to save this palace, I'll go down with it.
+
+Sprite: Idiot! What will that serve? Come! Help us save Mana.
+
+Dryad: Thanatos sealed my "Mana" magic, I won't be of much help.
+
+Princess: Don't worry! Let's go.
+
+Hero: Hurry!
+
+Dryad: Well, okay, I'll do what I can.</town_text></building><building room="Mana Fortress"><room_name>Mana Fortress</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Exterior" req="None" locked="False" name="Mana Fortress Exterior" dir="west"> </exit><item name="tree seed">The final seed needed to repower the Mana Sword.</item><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Exterior"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress" req="None" locked="False" name="Mana Fortress" dir="east"> </exit><exit link="Mana Fortress Interior" req="None" locked="False" name="Mana Fortress Interior" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Exterior" req="None" locked="False" name="Mana Fortress Exterior" dir="north"> </exit><exit link="Mana Fortress Interior 2" req="None" locked="False" name="Mana Fortress Interior 2" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 2"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior" req="None" locked="False" name="Mana Fortress Interior" dir="north"> </exit><exit link="Mana Fortress Interior 3" req="None" locked="False" name="Mana Fortress Interior 3" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 3"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 2" req="None" locked="False" name="Mana Fortress Interior 2" dir="north"> </exit><exit link="Mana Fortress Interior 4" req="None" locked="False" name="Mana Fortress Interior 4" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 4"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 3" req="None" locked="False" name="Mana Fortress Interior 3" dir="north"> </exit><exit link="Mana Fortress Interior 5" req="None" locked="False" name="Mana Fortress Interior 5" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 5"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 4" req="None" locked="False" name="Mana Fortress Interior 4" dir="north"> </exit><exit link="Mana Fortress Interior 6" req="None" locked="False" name="Mana Fortress Interior 6" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 6"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 5" req="None" locked="False" name="Mana Fortress Interior 5" dir="north"> </exit><exit link="Mana Fortress Interior 7" req="None" locked="False" name="Mana Fortress Interior 7" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 7"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 6" req="None" locked="False" name="Mana Fortress Interior 6" dir="north"> </exit><exit link="Mana Fortress Interior 8" req="None" locked="False" name="Mana Fortress Interior 8" dir="south"> </exit><monster name="Evil Head" gold="5" damage="40" boss="False" score="10" health="1200" exp="7500"> </monster></building><building room="Mana Fortress Interior 8"><room_name>Lost Continent</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 7" req="None" locked="False" name="Mana Fortress Interior 7" dir="north"> </exit><exit link="Mana Fortress Final Area" req="None" locked="False" name="Mana Fortress Final Area" dir="south"> </exit><monster name="Dark Lich" gold="5" damage="85" boss="True" score="2500" health="6500" exp="12500000"> </monster><town_text>
+
+Thanatos: For ages I have been searching, for a human with the power to
+conquer this world, one born in the shadow of darkness, and raised in the
+light of Mana. Dyluck is the one. I cannot wait any longer. My body has grown
+weak! It is time! Using his body I will take the Mana Fortress, and rule the
+world!
+
+Princess: Dyluck! Resist him with all your might!
+
+Thanatos: Uhrg, ahh, kack! I must, hurry, This body is, breaking up!
+H, help me, guhuf,let, m maieee!
+
+Princess: Dyluck! Snap out of it!
+
+Dyluck: Uhhn, Where am I? Guwa ha ha!
+
+Thanatos:  Guwa ha ha! How good this new body feels! I grow strong!
+
+Princess: Liar! You can't just STEAL someone's body!!
+
+Thanatos: My dear, I can do anything I want! Ha, ha-huh? Can't, move!
+Princess, can you hear me? It's me, Dyluck, He's too strong, I'm finished,
+but I can help you,  Thanatos is an ancient sorcerer who sold his heart to the
+underworld.
+
+Though his life force is eternal, he hasn't his own body. His life
+force is growing darker, He feeds on hatred and destruction!
+
+Thanatos: Ooh! Silence!
+
+Dyluck: Princess: I'm so sorry I won't see you again, But I have to do this.
+
+Dyluck: You're Hero, right? Take care of Princess.
+
+Princess: Dyluck! Stop it! Please! Dyluck! STOP IT!!
+
+Thanatos: Ugrrrrrrr!
+
+(Thanatos changes into Dark Lich)
+
+Thanatos: I forbid this! Just when I was to be reborn! I must withdraw! Give
+me your bodies! GUWAA!
+
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN$7Z$$NMMMMMDDMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNN$$$7Z$Z$$N8MMMMNDMMMM$DMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMD7$$$+$+::++7N7I+:NDDMMMZDMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMM$7?7?ZZ++77Z7$?,,,,ND~7MM+NMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMNN+$$+ZZ$$$Z?N$+,,,,+N$O,+$+NMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMNZ$ZZ77Z77+$77I,,,,,IN7?NINZNMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMDN7$$$$77$$77$7$++I:D,IND88NNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMDNNNNMDD7DO$$$7$N$$$$$$NN,7N8NNNNNNMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMN$77III7$DN$$$Z77ZDDZ7N++DNNZI?DI7II7$NMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM7$++I7$?7OII$I$DNN7INI+=:$N8NIDN$7I++$7MMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMM77?778I8OION?ND8D7IN7DDNDI+IZ+N8IN7I?77MMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMM+++?=7$~N7+OZ+O888887$NDI:N7N:8,N7D,$$=++++MMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMN7$7==77N~N?7ONND++D888DDDDI,,NNND7+N,N$7==7$7DMMMMMMMMMMMMMMMMM
+MMMMMMMMMMM$7==++++77$$$N8+8?DID8D88=,,$,:=DDI,,ZD?8+NN$$$7I++++==7$MMMMMMMMMMMM
+MMMMMMMMMN7=I77$$$$$$$$$7D+OOD+8888888=++8888D$:ON8O?NID$$$$$$$$77I+7DMMMMMMMMMM
+MMMMMMMM$+++I$$77+II$$$$,?+ZZ+N88888OOO8OOO888DNN+$O=+,D$$$II+777$7+++$NMMMMMMMM
+MMMMMN7II===+I$$$$$$$7$NNO7$D?DN$NOO$$$$$$$OON$NDIN77ZN+$7$$$$$$$7+===II7NMMMMMM
+MMMN777?===?$?:OZ$$$$$$NNI7+ND88OI$OZ88~88ZOZI7D8ND?7?D,$$$$$$$O=?7?++=+777DMMMM
+MMMN7777?8+7N+7IO$$$$$$NN$77ND88DN7I:,,+,,:77N888ND77$D+$$$$$$$I7+DI+N+=7$7NMMMM
+MMMM$$=+7=~+N=,?N$$$$$NNN?$INNDOD8OZ8O?~?O8$OD8O8NN7$+D+N$$$$$N?,~N+~:$++$7MMMMM
+MMMM$ID+N++NI+,NI+NDN$NND$ZONDDI?NZ$$$+,+Z$$8NIIDDNOZ7D?NZNND+IN=+IN+=NIDI$MMMMM
+MMMN7D,:N:,$IID7?$:$+IMMI8++N7DDI+,$7++,+=7$:+=DDID++ZIDM7+$,$+$ZI7$,:DI:D7DMMMM
+MMNI7NN7N?:=7I+7?I7++DMMN8OI7I?DDDN$I$=,+$I$NDDDO7?IONDMMN++7I+$+I?=:=N7DOIIDMMM
+MMN7I7=+7NDNNNDDD8DNNMMMM7N88NI8D8DOO$I+IZOOD8D8ODOODIMMMMNNDDDNDNNNDN7I=II7DMMM
+MMMDI7?7I8NNNNNNND88NMMMM?D8O?NN7IDN$I,=,?7NN?INZI8OD=MMMMN8DNNNNNNNNDI7+7IDMMMM
+MMMD77+7$8NNNNNNND8DMMMMM?DO+ZNNDDI+7D7I$N7+IDDN$Z+8N+MMMMMDDNNNNNNNND$D+77DMMMM
+MMMD$$I7NDDNNNNNND8DMMMMM?DZ$7$N8888888D88888DON?O$ZN+MMMMMDDDNNNNNNDNND?$$DMMMM
+MMMM$$IIDNNNNNNNN88DMMMMM?D7+8,8OI8888DZ8888?8887N+7N+MMMMMD88NNNNNNNNN77$$MMMMM
+MMMMMM877ZDNNNND88ODMMMMMO?$I8~D8887?788888Z8O8D7N?$IOMMMMMDO88DNNNNDO77OMMMMMMM
+MMMMMMMD$77NNND8O8MMMMMMMMDNI7DD88IZZ?D8Z8888?8N$7INNMMMMMMMM8Z8DNNN77$8MMMMMMMM
+MMMMMMMM$$$NNN888NMMMMMMMMMMDODID8888888I88ZI8DNZZNMMMMMMMMMMN888NNN$$$NMMMMMMMM
+MMMMMMMM877$DD888NMMMMMMMMMMMNN+D88D?88888888Z8+DNMMMMMMMMMMMN888DN$778NMMMMMMMM
+MMMMMMMMNZ7I$D888NMMMMMMMMMMMNDDD8888DD88OI?=DDDDNMMMMMMMMMMMND88D$I7$NMMMMMMMMM
+MMMMMMMMMD$I$D8DMMMMMMMMMMMMMN8888888DD88888Z8888NMMMMMMMMMMMMMDOD$I$DMMMMMMMMMM
+MMMMMMMMMND7$D7MMMMMMMMMMMMMMN888?D8888D?8DZ~DD8DMMMMMMMMMMMMMMMODZ7DNMMMMMMMMMM
+MMMMMMMMMMM$$$NMMMMMMMMMMMMMMN8888DND88DD888ID88MMMMMMMMMMMMMMMMM$$$MMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMDD8888N8D88ND888888MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDD8DD8O?8DDOD888DMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDDDDN8888ND88D88NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDDDMN888DND88D8DNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDNMMN88DNMDD8N8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMN8DDMMNDNNDMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMD8NMM8MMMDMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMDNMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+
+        </town_text><item name="Mana Sword">The ultimate weapon needed to defeat the Mana Beast.</item></building><building room="Mana Fortress Final Area"><room_name>Mana Fortress Final Area</room_name><text>The legendary Mana Fortress... We've got to hurry.</text><exit link="Mana Fortress Interior 8" req="None" locked="False" name="Mana Fortress Interior 8" dir="north"> </exit><monster name="Mana Beast" gold="5" endcode="1" damage="150" boss="True" score="9999" health="15000" exp="2500000"> </monster><town_text>Princess: Ooh! Dyluck!!!
+
+Hero: What the?! Let's get out of here!
+
+Sprite: Uwaa!
+
+Hero: What is is?
+
+Sprite: whew! I'm okay just dizzy! We have to get out of here, NOW!
+
+(Outside)
+
+Sprite: It's a Mana Beast!
+
+Sprite: Hurry, or the Mana Beast will ruin the world! Come on! Do it!
+
+Hero: I can't, I won't hurt a Mana Beast! I can't! They are only trying to
+restore Mana! And, Sprite! If you use up all your Mana power, you'll
+disappear!
+
+Princess: Oh NO!
+
+Hero: Right, I can't go through with this.
+
+Sprite: Whaddaya mean? I'm NOT gonna kick the bucket! My world is
+seperate from this one. It just means I won't, see you again. ok, if we don't
+stop the Mana Beast, your world is finished, right? Everything will perish.
+Trees,animals, PEOPLE! That must not happen! YOU have the Mana Sword, YOU
+must save this world, YOU have no choice! You made a vow to your mother, the
+Mana Tree, right? I'll be okay.
+
+Hero: All right, you're sure?
+
+Sprite: OF COURSE! Later, Princess!
+
+
+                 ,?+7    77I77=+7+7           7~=77I77777
+                 ,I=7    =,::,+?~77           =:I+77+=777
+          77 7   ,+?I7777?,:==::I777777 7777,=+,I=7II?77777 7777777
+          77??????,I++7+:~:=:===~~~II +I=+I?~~+?++7=?I7777?????????
+   7 7 777~==++++?~+I=~~~=:~~+:+++~~~,+=??==~:?+~7~??=~==+???+==+++==I77777
+   77 7=+++=++??+,,:+?=?,==~~:~~===,,II~~+?+:+==:=+=~==++++:,,+??+===+=~777
+77777=+?++==?II?++++:=I,=:=~I:,,,,=?I,~=??,~==+:==+====+~,++++++?7I+==+?+~7777
+7777+?=++?II+==+=?++?~?,=??=+::~:++++~=??,==+=~~=+=:=:~+++?+??+=+++II?+==?+777
+77??=~+:+??:7777777~?:=,:~:?,+=,,:,,~????,+II+~:~~:+~??++??~7 77777:??+:+~=+?7
++=I7~777~I7777   77I=~+:?+=++II?+=+++::=~:IIIIIIII??I+=~~==I       77I:777~7I=+7
+I77I7777I77777   777I7~+==?I+:~,~++?++~++IIII??I7I?+=+==:~=7       777I7777I77II
+                     7:=~~I+:+?~??7?+=:~=III+??II7?+:=+?:?=::,77
+                     77,??=:+=?7+7+~::,:=?I?++++II?+:+:=~?I=7I+7
+                     +IIIIIII?=I:=====~==+I??~:=+?=~~I:=~??~?~?
+                     =I+=,:~~::+~~:::~==~~II?~:~==~77~:77=77~777
+                 777 7777?+,:=:+==~,:~:~+I+?+~,777777~777777
+                 7  7777~+?~=~+~=+==~~~=?I?+=:777777?=777 77
+                  7I:::~===+=:~~=~~~~=+?I?=:~,======+,:~~~?
+          777777777:~+:+?:+=+::,::~~~==++=~:===:,:+?+,II=:=77777777
+          77+??+=+,??~?7++:===~~:~~~~~~~=~~~~=~?III?=,=++++==+=+???
+          777?=?+~:+=:7?~=:=:,++~=~::~~~~~=~~+~+III?=:~=~=+?????=?77777
+          7,=+==~I,:~=:==::~+I===:~:~~===:=?=:~:,7I?:?I??~======+++,777
+   777777=+I+====::++:,::I?:~+=:=~~~:~~+:+?=::=+=+=+:,,7I??+,:===+=I?=77777
+   777 ?+++==~~~??????+~~~,++~+=::~~?==?I+::::+7?+~+7,7I:???++?~~~=++++I777
+   777=====~?+??=~++?::+?+~?+~:=:~~?,=+~I:=~::=7=:~~7,=I:~?=+~=????~+====77
+   7+++==??~7777777I?+,7+~~I==+~:~~~=?I????~::=:~~==~:777777777777I~??==+++777
+   ++?~??+7777777777+::+~~=~:+=::~~==+????=~::+~?+~~+777777777777777I=?+=?++77
+77+=~+:=+I       77 777  ,,,:~~~::~~==~~=~:~=:=~~~~=7              77I=~:?~++I
+7=+:+:77=7       7 7   7 77 7~==~~~~~::::~=+=I~+??,77              777=77,+:+=
+=+~~?77                     7+I++:~~=?II??:+=I?II=7 7                  777?:~+=7
+=+?~777                     7?+7I:~~=???I+:+~I7=7+ 7                   7777~+===
+,7+                             7:~~~~~~=:+==7                             7?7:+
+777                             7:~~~+??+++~=7                             77777
+777                             7~~~=???+~=:?7                             77777
+                                7=~:~~=~=+:,=7
+                                I~~~~===~~:~~I
+                             777=~~~~~:~~~~:~I
+                             777=+?=::::~~:=?7
+                            777=~~=+=:::::,777
+                            777:+?+~~?77777777
+                            777:=+=~:777777777
+                            777~=?+=~77
+                            7777==~:~77
+                                :====77
+                                ?=++=7
+                                7I~==~I
+                                77?~===
+                                   77=~?77
+                                   77:+?77
+                                   777=?77
+                                   7777?77
+
+
+
+</town_text></building></map>

@@ -1,0 +1,151 @@
+<map>
+	<building room="First Floor Lobby">
+            <text>"You are now in the Q2 Banking Lobby facing the elevator.</text>
+            <text> The lobby is isolated and deserted.</text>
+            <text> A cool, unsettling breeze blows over you."</text>
+			<event> 1 </event>
+    </building>
+		
+	<building room="Elevator:">
+        <text>The elevator can take you to the first, second, third, or fourth floor.</text>
+        <text> You notice the sketch of the Fresh Prince of Bellair on the wall, and can't help but smile.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor Landing:">
+        <text>You are standing in the elevator lobby on the second floor, you look around at possible paths you can take.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor Cubicles:">
+        <text>A maze of cubicles lays before you. No matter how many times you pass through this maze of cubicles, you are never quite sure where to go.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor Utility Room:">
+        <text>You make your way into the utility room on the second floor. Cleaning supplies and other items litter the room, nothing useful here.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor North East:">
+        <text>You arrive at the northeast corner of the Q2 building... You notice a set of...bloody footprints leading to your right. What the hell is happening here? .</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor North West:">
+        <text>The northwest corner of the building is pretty unassuming...</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor South:">
+        <text>You are standing at the southernmost point of the second floor, a pungent odor near by is nearly overwhelming.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor South East:">
+        <text>You notice that the desks in this area are in complete disarray... What happened here?.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor South West:">
+        <text>Second Floor South West.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Second Floor Break Room:">
+        <text>You find yourself in the break room and stop to have a cup of coffee.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Third Floor Landing:">
+        <text>You are standing in the elevator lobby on the third floor, you notice a phone shattered on the floor.</text>
+		<event> 1 </event>
+    </building>
+		
+	<building room="Third Floor Cubicles:">
+        <text>A maze of cubicles lays before you. The third floor was always confusing, you notice papers and other office supplies thrown on the floor.</text>
+		<event> 1 </event>
+    </building>
+
+	<building room="Third Floor Offices:">
+        <text>A maze of offices and corners lay in front of you... The perfect spot for an ambush.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor North East:">
+        <text>The northeast corner of the third floor, a terrible odor permeates the air as you cant help but question what happened here.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor North West:">
+        <text>Bloody food prints mark the carpet... what the hell?</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor South:">
+        <text>The southern side of the third floor. You notice a few people milling about in the parking lot across the street.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor South East:">
+        <text>Office supplies and trash litter the floor.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor South West:">
+        <text>If anyone was going to be here, they'd be on the third floor right?.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Third Floor Break Room:">
+        <text>You find yourself in the break room and stop to have a cup of coffee, there is always time for coffee.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor Landing:">
+        <text>You find yourself on the fourth floor.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Locked Office:">
+        <text>You turn the handle, but it is locked... Of all the days to forget my key....</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Network Operations Center:">
+        <text>You take the passage to your right and find yourself in the Network Operations Center.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor North East:">
+        <text>In front of you are a mass array of offices.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor Offices:">
+        <text>In front of you are a mass array of offices.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor South:">
+        <text>Fourth Floor South.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor South East:">
+        <text>In front of you are a mass array of offices.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Fourth Floor South West:">
+        <text>In front of you are a mass array of offices.</text>
+		<event> 1 </event>
+    </building>
+	
+	<building room="Project R Area:">
+        <text>You take the passage to your right and find yourself in the Project R Area.</text>
+		<event> 1 </event>
+    </building>
+</map>
+	
+	

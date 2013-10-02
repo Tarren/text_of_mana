@@ -1,0 +1,7 @@
+<map>
+	<area coord = "0 0"> #area.attr["coord"] => "0 0"
+		<name> Room</name>
+		<desc> Example <desc>
+		<exit> n </exit>
+			<desc> an old wooden door>
+		

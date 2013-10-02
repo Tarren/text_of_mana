@@ -1,0 +1,65 @@
+<map>
+    <player>
+        <inventory> </inventory>
+        <hp> </hp>
+    </player>
+	<building room="Log Cabin">
+		<room_name>Log Cabin</room_name>
+        <text>You are in a log cabin. Various tools and paper litter the floor. You see a door to your north</text>
+		<event> </event>
+        <exit name="wooden door"  locked="True" hidden="False" link="Front Lawn" dir="north" req= "rusty key"/>
+        <exits>Front Lawn</exits>
+		<item name="rusty key"> A rusty key is laying on the ground </item>
+        <item_desc desc= "A rusty key is laying on the ground"> </item_desc>
+    </building>
+		
+	<building room= "Front Lawn">
+        <room_name>Front Lawn </room_name>
+        <text>You are on the lawn in front of the Log Cabin. It is pitch black outside. You can just barely make out a path to the east, a dense fog fills the air.</text>
+        <exit name="path" link="Country Road" dir="east" req= "None" locked="False"/>
+        <exit name ="wooden door" link = "Log Cabin" dir = "south" req= "None" locked="False"/>
+	</building>
+
+   	<building room="Country Road">
+		<room_name>Country Road</room_name>
+        <text>You are on a deserted country road. You can see lights to the north of where you are standing. A light rain begins to fall. The cabin is back to your west.</text>
+        <exit name="path" link="Front Lawn" dir="west"  locked="False"> </exit>
+        <exit name= "road" link= "Middle of Nowhere" dir = "north" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Middle of Nowhere">
+        <room_name>Middle of Nowhere </room_name>
+        <text>You continue to walk down the country road. You see lights to your north, and the log cabin is to your west.</text>
+        <exit name="path" link="Country Road" dir="west" locked = "False"> </exit>
+        <exit name ="road" link = "Gas Station" dir = "north" locked = "False"> </exit>
+    </building>
+
+
+    <building room= "Gas Station">
+        <room_name>Gas Station </room_name>
+        <text>You arrive at a gas station. None of the lights are on, and the front door is locked, the cabin is to your south.</text>
+        <exit name="path" link="Middle of Nowhere" dir="south" locked = "False"> </exit>
+        <exit name="path" link="Gas Station Rear" dir="east" locked = "False"> </exit>
+        <exit name="path" link="Gas Station Interior" locked="True" dir="north"> </exit>
+    </building>
+
+    <building room= "Gas Station Interior">
+        <room_name>Gas Station Interior </room_name>
+        <text>You arrive at a gas station. None of the lights are on, and the front door is locked, the cabin is to your south.</text>
+        <exit name="path" link="Middle of Nowhere" dir="south" locked = "False"> </exit>
+        <exit name="path" link="Gas Station Rear" dir="east" locked = "False"> </exit>
+    </building>
+
+    <building room= "Gas Station Rear">
+        <room_name>Gas Station </room_name>
+        <text>You arrive at the back of the gas station. The gas station is back to your west</text>
+        <exit name="path" link="Gas Station" dir="west" locked = "False"> </exit>
+    </building>
+
+    <building room= "Outskirts of Town">
+        <room_name>Outskirts of Town </room_name>
+        <text>You arrive on the outskirts of a town. The sign next </text>
+        <exit name="path" link="Gas Station" dir="west" locked = "False"> </exit>
+    </building>
+</map>
+

@@ -1,0 +1,1546 @@
+<map>
+    <party length = '0'> </party>
+
+        <player name = 'Hero' room="0" level = '1' playerxp = '0' Nextlvl = '25' strength = '1' dexterity = '1' endurance = '5' attack1 = '25' attack2 = '25' health = '100' score = '0' wallet = '0'>
+            <item name="pocket lint"></item>
+        </player>
+        <player name = 'Princess' room="0" level = '1' playerxp = '0' Nextlvl = '25' strength = '1' dexterity = '1' endurance = '1' attack1 = '12' attack2 = '12' health = '100'>
+        </player>
+        <player name = 'Sprite' room="0" level = '1' playerxp = '0' Nextlvl = '25' strength = '1' dexterity = '1' endurance = '1' attack1 = '12' attack2 = '12' health = '100'>
+        </player>
+
+    <intro>
+        <text>Using the power of Mana a civilization had grown strong.
+In time, Mana was used to create the ultimate weapon: the Mana Fortress.
+This angered the gods, they sent their beasts to destroy the Fortress.
+A violent war rocked the world, and Mana seemed to disappear.
+Before all was lost, a hero with the Mana Sword smashed the Fortress.
+Though the civilization had been destroyed, the world was peaceful again.
+But time flows like a river, and history repeats.
+
+
+ _____  ________  ______    ____  _____   _     ____  _     ____
+/__ __\/  __/\  \//__ __\  /  _ \/    /  / \__//  _ \/ \  //  _ \
+  / \  |  \   \  /  / \    | / \||  __\  | |\/|| / \|| |\ || / \|
+  | |  |  /_  /  \  | |    | \_/|| |     | |  || |-||| | \|| |-||
+  \_/  \____\/__/\\ \_/    \____/\_/     \_/  \\_/ \|\_/  \\_/ \
+
+
+                                            ~
+                         ~                '
+                           `        (O)       ~
+                                     H      '
+                     ~               H
+                       `        ____hHh____
+                         ~      `---------'    ~
+                           `       | | |     '
+                                   | | |
+                                   | | |
+                                   | | |
+                                   | | |
+                                   | | |
+                                   | | |
+                                   | | |
+                             _____;~~~~~:____
+                          __'                \
+                         /         \          |
+                        |    _\\_   |         |\
+                        |     \\    |         | |      ___
+                 __    /     __     |         | |    _/   \
+                /__\  |_____/__\____|_________|__\  /__\___\
+
+        </text>
+    </intro>
+
+	<building room="Waterfall">
+		<room_name>Waterfall</room_name>
+        <text>You are at the Poto's Waterfall. You spent countless hours playing here as a kid.</text>
+		<event> </event>
+        <exit name="Waterfall Basin"  locked="True" hidden="False" link="Waterfall Basin" dir="west" req= "rusty sword"/>
+        <item name="rusty sword">A Rusty Sword...Whats a sword doing in a place like this/</item>
+        <party member = '0'> </party>
+        <town_text>(3 kids on bridge)
+
+Hero: Hey! Guys! Wait up!.
+
+Elliot: Shh! Be quiet! The Elder will find us here and he'll be mad!.
+
+Timothy: Yeah, We're not supposed to be here, There's a ghost around!.
+
+Elliot: Ha! Do you really believe that? People say that to scare us! But I
+heard Grandma say something about a shiny object near the falls.
+
+Timothy: That must be some kind of treasure! We have to find it!.
+
+(Hero starts to fall backwards)
+
+Hero: Help! I'm falling! Aaahhhhhhhhhh!.
+
+(After landing in a shallow pool)
+
+Hero: Ouch! Phew! No way to get back up! Now what am I going to do?.
+
+Hero: The village is this way, I have to find something to cut through!.
+
+Mysterious Voice: Hero, Remove the sword.
+
+Hero: Who are you, and what's this sword doing here?.
+
+Hero: Urrrrrrrgh! Huh!? Ow! That light, so bright I can't see.
+
+Mysterious Voice: Hero, It is I who asked, the sword.
+
+Hero: !? Say what? You mean this sword?
+
+*The brilliant light is gone in an instant*.
+
+                            ~
+         ~                '
+           `        (O)       ~
+                     H      '
+     ~               H
+       `        ____hHh____
+         ~      `---------'    ~
+           `       | | |     '
+                   | | |
+                   | | |
+                   | | |
+                   | | |
+                   | | |
+                   | | |
+                   | | |
+             _____;~~~~~:____
+          __'                \
+         /         \          |
+        |    _\\_   |         |\
+        |     \\    |         | |      ___
+ __    /     __     |         | |    _/   \
+/__\  |_____/__\____|_________|__\  /__\___\
+
+Hero: I have to get back! </town_text>
+
+    </building>
+
+    <building room= "Flamie">
+        <room_name>Flamie</room_name>
+        <text>On Flammies back, you can go almost anywhere in the world.</text>
+        <exit name="Pandora" link="Pandora" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island" link="Gold Island" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Lost Continent" link="Lost Continent" dir="north" req= "gold seed" locked="True"> </exit>
+        <exit name="Mana Fortress" link="Mana Fortress" dir="south" req= "tree seed" locked="True"> </exit>
+    </building>
+
+    <building room= "Waterfall Basin" monster_chance="10">
+        <room_name>Waterfall Basin </room_name>
+        <text>The basin of the waterfall, legend has it that the mana sword was placed here after the great war.</text>
+        <exit name="Waterfall" link="Waterfall" dir="east" req= "None" locked="False"/>
+        <exit name ="Rabite Forest" link = "Rabite Forest" dir = "west" req= "None" locked="False"/>
+        <item name="candy">Heals the player to full health.</item>
+	</building>
+		
+	<building room= "Rabite Forest" monster_chance="10">
+        <room_name>Rabite Forest </room_name>
+        <text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text>
+        <exit name="Waterfall Basin" link="Waterfall Basin" dir="east" req= "None" locked="False"/>
+        <exit name ="Rabite Forest 1" link = "Rabite Forest 1" dir = "west" req= "None" locked="False"/>
+        <monster name = "Rabite" health = '100' exp = '63' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+	</building>
+
+    <building room= "Rabite Forest 1" monster_chance="10">
+        <room_name>Rabite Forest South East</room_name>
+        <text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text>
+        <exit name="Rabite Forest" link="Rabite Forest" dir="east" req= "None" locked="False"/>
+        <exit name="Rabite Forest 2" link="Rabite Forest 2" dir="west" req= "None" locked="False"/>
+        <monster name = "Rabite" health = '100' exp = '63' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+	</building>
+
+   	<building room="Rabite Forest 2" monster_chance="55">
+		<room_name>Country Road</room_name>
+        <text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text>
+        <exit name="Rabite Forest 1" link="Rabite Forest 1" dir="east" req= "None" locked="False"> </exit>
+        <exit name= "Rabite Forest 3" link= "Rabite Forest 3" dir = "west" req= "None" locked="False"> </exit>
+        <monster name = "Rabite" health = '100' exp = '63' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+    </building>
+
+    <building room= "Rabite Forest 3">
+        <room_name>Rabite Forest South West</room_name>
+        <text>The Rabite Forest is usually peaceful and serene... why do I have such a bad feeling about this place.</text>
+        <exit name="Rabite Forest 2" link="Rabite Forest 2" dir="east" req= "None" locked="False"> </exit>
+        <exit name ="Rabite Forest 4" link = "Rabite Forest 4" dir = "north" req= "None" locked="False"> </exit>
+        <monster name = "Rabite" health = '100' exp = '63' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+    </building>
+
+    <building room= "Rabite Forest 4">
+        <room_name>"Rabite Forest West </room_name>
+        <text>Good, I am getting close to town</text>
+        <exit name="Rabite Forest 3" link="Rabite Forest 3" dir="south" req= "None" locked="False"> </exit>
+        <exit name ="Rabite Forest 5" link = "Rabite Forest 5" dir = "north" req= "None" locked="False"> </exit>
+        <monster name = "Rabite" health = '100' exp = '63' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+    </building>
+
+    <building room= "Rabite Forest 5">
+        <room_name>"Rabite Forest North West </room_name>
+        <text>Nearly back in town, what is driving the Rabites so crazy?.</text>
+        <exit name="Rabite Forest 4" link="Rabite Forest 4" dir="south" req= "None" locked="False"> </exit>
+        <exit name ="Potos Village" link = "Potos Village" dir = "east" req= "None" locked="False"> </exit>
+        <monster name = "Rabite" health = '100' exp = '200' damage = '6' gold = '5' boss = 'False' score = '10'> A Rabite appears in front of you </monster>
+    </building>
+
+    <building room= "Potos Village">
+        <room_name>Potos Village</room_name>
+        <text>Potos Village, things seem more tense now than they ever have before.</text>
+        <exit name="Rabite Forest 5" link="Rabite Forest 5" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Potos Inn" link="Potos Inn" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Potos Elders House" link="Potos Elders House" req = "None" locked="False" dir="north"> </exit>
+        <exit name="Path to Pandora" link="Path to Pandora" req = "exile orders" locked="True" dir="south"> </exit>
+        <town_text>Elder: Hero! You're not hurt! They just told me what happened.
+
+Elliot: I thought you were a goner.
+
+Timothy: I told you it was stupid to bring someone like HIM along.
+
+Elder: You idiots! Weren't you told not to go there? Huh? Hero! What's
+that you have? Oh, no! It couldn't be.
+
+Elliot: Cool! Did you find the treasure?
+
+Timothy: Way to go!
+
+Elder: What have you done?! How could YOU have pulled out the Mana Sword?
+It's impossible.
+
+Timothy: THE Mana Sword?! Legend has it that our village is finished.
+
+Elder: If the sword is removed, And here it is! It is said that the Mana
+Sword has been  protecting our village from disaster.
+
+Elliot: So that's it! That's why all the monsters are attacking us now! How
+could an outsider like you yank out the sword and bring doom to us all!!.
+(Elliot hits Hero)
+
+Hero: Hey! Stop it!.
+
+Elliot: YOU did it!.
+
+Elliot: It's all your fault!.
+
+Elliot: You!.
+
+Hero: Please, stop!.
+
+Waaah!  Earthquake!
+
+                   __                                   __
+                  (  )___      ,-~-~-~-~-~-~-,      ___(  )
+                   \____ \__ ,'               `, __/ ____/
+                        \__ \_ _ ,-~-~-~-~-, _ _/ __/
+                         ,'\___ \__       __/ ___/`,
+--,                    ,'    ,'\__ \     / __/`,    `,                    ,--
+   `:,                ;    ,'     \_     _/     `,    :                ,:'
+    : `,             ;    ;                       :    :             ,' :
+   ,    `,          ;    ;                         :    :          ,'    ,
+--'       `,       ;    ;                           :    :       ,'       `--
+   `,       `,    :    ;                             :    :    ,'       ,'
+     `,       `,  :   :                               :   :  ,'       ,'
+       `,       \,:   ;                               :   :,/       ,'
+  ,--,_  `,      :`--!                                 !--':      ,'  _,--,
+ (    )`-, `,    :   !---,                         ,---!   :    ,' ,-'(    )
+,'`--'    `-,\   ;   !    `,                     ,'    !   ;   /,-'    `--'`,
+    :`-,      `,',__,!  ____\                   /____  !,__,`,'      ,-':
+    ;   `,     \,----! ( [Q]):                 :([Q] ) !----,/     ,'   :
+   +      `,   /      : \_,' :                 : `,_/ :      \   ,'      :
+  ;  ,--------, ,------:     :                 :     :------, ,--------,  :
+ ; ,-,         :        :    :                 :    :        :         ,-, :
+; (   )        ;         :   :                 :   :         ;        (   ) :
+  ;`-',`------',`---------:  :                 :  :---------',`------':`-':
+ ;   ;      (        $####:  ;                 :  :####$        )      :   :
+;    :       `-,---,_$#####:`                   `:#####$_,---,-'       :    :
+    ;         (      $#######  /\           /\  #######$      )         :
+   ;           `-,--,_$#######/  \    _    /  \#######$_,--,-'           :
+  ;             (      $######    \__/#\__/    ######$      )             :
+ ;               `-,-,__$#####,    #######    ,#####$__,-,-'               :
+;                 (      $#####    #######    #####$      )                 :
+                   `-,-,__$####,   #######   ,####$__,-,-'
+                    (      $####,  #######  ,####$      )
+                     `---,__$#####,`#####',#####$__,---'
+                        (     $####,`###',####$     )
+                         `----,_$###########$_,----'
+                             (   $#########$   )
+                              `----,#####,----'
+                                    `###'
+                                      #
+                      ,,                                                      </town_text>
+        <monster name = "Boss Mantis Ant" health = '300' exp = '500' damage = '26' gold = "450" boss = 'True' score = '200'> A monster bigger than the rest, much more powerful appears in front of you. </monster>
+        <monster_text>Village Elder: Why atr </monster_text>
+    </building>
+
+    <building room= "Potos Inn">
+        <room_name>Potos Inn</room_name>
+        <text>The smell of cloves fill the air. A cheery tune is coming from a music box in the corner.</text>
+        <exit name="Potos Village" link="Potos Village" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Potos Elders House">
+        <room_name>Potos Elders House</room_name>
+        <text>My childhood home. The village elder adopted me after my mother passed away</text>
+        <exit name="Potos Village" link="Potos Village" dir="south" req= "None" locked="False"> </exit>
+        <item name="exile orders">Orders barring me from town...I guess they are kicking me out...</item>
+        <town_text>
+
+Villager: Elder! We can't go on like this.
+
+Villager: Yeah! There's no end in sight.
+
+Elder: Oh, Hero! You've really done it to me this time! The reason why
+monsters have appeared is because you removed the sword.
+
+Villager: It's settled, We can't let Hero stay in the village anymore.
+
+Villager: If we do, more monsters will come after him.
+
+Villagers: Go! Get out of here! Yeah, on your way now.
+
+Elder: I don't want to do this, but I have no choice, I'm going to have to
+ask you to leave the village, You can take what's in the treasure
+chest downstairs.
+
+Elder: I took you in and I raised you, But there's nothing I can do to help,
+Please forgive me, I know I've told you this before, but Your
+mother brought you to this village when you were just a baby, Soon
+afterwards, she disappeared, I took you and have done my best to
+raise you, But now we must part, I truly hope you can find your mother
+someday, Good bye, Hero.
+
+Elder: I took you in and I raised you, But there's nothing I can do to help,
+Please forgive me.
+
+Gatekeeper: You are hereby banished from Potos Village, Now, get out of here!</town_text>
+
+    </building>
+
+
+    <building room= "Path to Pandora">
+        <room_name>Path to Pandora</room_name>
+        <text>You are standing at the edge of a great forest. Pandora is quite a journey, but what other choice have you got?</text>
+        <exit name="Pandoran Forest 1" link="Pandoran Forest 1" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Lullabud" health = '160' exp = '22' damage = '12' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Pandoran Forest 1">
+        <room_name>Pandoran Forest</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Path to Pandora" link="Path to Pandora" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 2" link="Pandoran Forest 2" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Mushboom" health = '175' exp = '24' damage = '13' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Pandoran Forest 2">
+        <room_name>Pandoran Forest North West</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 1" link="Pandoran Forest 1" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 3" link="Pandoran Forest 3" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Pandoran Forest 3">
+        <room_name>Pandoran Forest North</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 2" link="Pandoran Forest 2" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 4" link="Pandoran Forest 4" dir="west" req= "None" locked="False"> </exit>
+        <monster name = "Mushboom" health = '175' exp = '24' damage = '13' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Pandoran Forest 4">
+        <room_name>Pandoran Forest North East</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <item name="candy">Heals the player to full health.</item>
+        <exit name="Pandoran Forest 3" link="Pandoran Forest 3" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 5" link="Pandoran Forest 5" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Water Palace Exterior" link="Water Palace Exterior" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Water Palace Exterior">
+        <room_name>Water Palace </room_name>
+        <text>The majestic Water Palace, home of the Water Seed.</text>
+        <exit name="Pandoran Forest 4" link="Pandoran Forest 4" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Water Palace Interior" link="Water Palace Interior" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Boss Fishboom" health = '600' exp = '350' damage = '35' boss = 'True' gold = '5' score = '250'> </monster>
+        <town_text>      ,|
+     / ;
+    /  \
+   : ,'(
+   |( `,\
+   : \  `\       \,
+    \ `,         | `,
+     \  `-,_     ;   \
+      \     ``-,',, _ `,_
+       `, `-,            ```-,,,__
+        ,'`,        --,,          ``-,,____
+      ,',-'`,_-,_            ((((   [o,   ,'
+           `' `-,)``-,_-,,,__````  ____,-'
+               ,'    _,',--,---------'
+           _,-' _,,-'   ),'
+          ``--''        `
+</town_text>
+    </building>
+
+    <building room= "Water Palace Interior">
+        <room_name>Water Palace </room_name>
+        <text>The majestic Water Palace, home of the water seed.</text>
+        <exit name="Water Palace Exterior" link="Water Palace Exterior" dir="south" req= "None" locked="False"> </exit>
+        <item name="water seed">The water seed... one of the eight seeds I need to repower the Mana Sword.</item>
+        <town_text>Luka: My, my, looks like you have the Mana Sword! How interesting. Ho ho ho!
+
+Jema: Luka, monsters are invading villages. He just fought one!
+
+Luka: I know. The ebb and flow of water brings me news from around the world,
+Mana's power is growing weak, That's why this boy was able to take the
+sword, When he did, the balance of Mana in this area shifted, and
+monsters revived, There are evil monsters working to steal away the power
+of the Mana Sword, By defeating those evil monsters, you can restore the
+Sword's Mana power, The power is kept in orbs, Looks like it regained
+some power from the Mantis Ant, There must be more hidden orbs which hold
+Mana power for the Sword, And you must find someone who can forge the
+sword to release its stored power.
+
+Jema: Once I was one of Luka's followers. I studied the power of Mana, which
+sustains everything in this world.
+
+Luka: Jema, watch out for the Empire, It seeks to Obtain the Mana Fortress.
+
+Hero: You mean the one that destroys the world in that fairy tale?
+
+Jema: That's no fairy tale, The Empire is trying to awaken it.
+
+Luka: The Empire is trying to unlock the seals from the world's Mana Seeds, A
+bunch of strangers have already started snooping around this palace!
+
+Jema: Something is very wrong in Pandora, Could the Empire be involved?
+
+Luka: I don't know, Jema, see the king of Pandora and tell him to be
+cautious.
+
+Jema: Right, I'm on my way, Hero, you go to the cave called Gaia's Navel, Legend has it a
+Mana seed is kept in its depths.</town_text>
+    </building>
+
+
+    <building room= "Pandoran Forest 5">
+        <room_name>Pandoran Forest East</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 4" link="Pandoran Forest 4" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 6" link="Pandoran Forest 6" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Mushboom" health = '175' exp = '24' damage = '13' boss = 'False' gold = '5' score = '10'> </monster>
+
+    </building>
+
+    <building room= "Pandoran Forest 6">
+        <room_name>Pandoran Forest South East</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 5" link="Pandoran Forest 5" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 7" link="Pandoran Forest 7" dir="east" req= "None" locked="False"> </exit>
+
+    </building>
+
+    <building room= "Pandoran Forest 7">
+        <room_name>Pandoran Forest South</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 6" link="Pandoran Forest 6" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 8" link="Pandoran Forest 8" dir="east" req= "None" locked="False"> </exit>
+        <monster name = "Mushboom" health = '175' exp = '24' damage = '13' boss = 'False' gold = '5' score = '10'> </monster>
+
+    </building>
+
+    <building room= "Pandoran Forest 8">
+        <room_name>Pandoran Forest South West</room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 7" link="Pandoran Forest 7" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Pandoran Forest 9" link="Pandoran Forest 9" dir="north" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Pandoran Forest 9">
+        <room_name>Pandoran Forest West </room_name>
+        <text>All around you is forest. The wildlife in the area seems much more aggressive than usual.</text>
+        <exit name="Pandoran Forest 8" link="Pandoran Forest 8" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Pandora" link="Pandora" dir="west" req= "water seed" locked="True"> </exit>
+        <monster name = "Mushboom" health = '175' exp = '24' damage = '13' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Pandora">
+        <room_name>Pandora </room_name>
+        <text>Pandora is a small town near a river. I have only been a few times.</text>
+        <exit name="Pandoran Forest 9" link="Pandoran Forest 9" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Pandora Inn" link="Pandora Inn" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandora Shrine Exterior" link="Pandora Shrine Exterior" dir="south" req= "earth seed" locked="True"> </exit>
+        <exit name="Gaias Navel Forest" link="Gaias Navel Forest" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Pandora Inn">
+        <room_name>Pandora Inn</room_name>
+        <text>A cozy inn near the center of town.</text>
+        <exit name="Pandora" link="Pandora" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Pandora Shrine Exterior">
+        <room_name>Pandora </room_name>
+        <text>A forbidden shrine. I wonder what goes on here?</text>
+        <exit name="Pandora" link="Pandora" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Pandora Shrine Hall" link="Pandora Shrine Hall" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Death Wall" health = '666' exp = '1000' damage = '25' boss = 'True' gold = '5' score = '350'> </monster>
+
+<town_text>
+Hero: Thanatos, I presume?
+
+Thanatos: Indeed, I know all about you. You're no ordinary fool if you managed to get the Water Seed.
+
+Thanatos:Soon the Mana Fortress will bring the people of the world
+together! Surrender, and you can serve me, Don't, and you'll end up
+like HIM!</town_text>
+        </building>
+
+    <building room= "Pandora Shrine Hall">
+        <room_name>Path to Gaias Navel </room_name>
+        <text>The path to Gaias Navel.</text>
+        <exit name="Pandora Shrine Interior" link="Pandora Shrine Interior" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Pandora Shrine Exterior" link="Pandora Shrine Exterior" dir="west" req= "None" locked="False"> </exit>
+        <party member = '2'> </party>
+        <town_text>Princess: Dyluck!!
+Thanatos: He was a tough one, I see Elinee had a hard time with him, too, He
+must be receiving some kind of special power, Great find, huh? And
+you can join him now!.
+Princess: Let me come with you, we have to stop this psycho.
+
+        </town_text>
+    </building>
+
+    <building room= "Pandora Shrine Interior">
+        <room_name>Pandora </room_name>
+        <text>A forbidden shrine. I wonder what goes on here?.</text>
+        <exit name="Pandora Shrine Hall" link="Pandora Shrine Hall" dir="north" req= "None" locked="False"> </exit>
+        <item name="travel pass">A Travel pass to get to the upperlands.</item>
+        <town_text>
+Jema: Oh, Hero! Sorry, I was spacing out! Thanatos was one of their best men,
+They must be desperate to get Mana.
+
+Why was he taking the life energy away from the people here? The Empire only needs power from the
+seeds, not from the people, There's something, curious about
+Thanatos,  I've got a bad feeling about him. Anyway, let's get out of
+here!
+        </town_text>
+    </building>
+
+    <building room= "Gaias Navel Forest">
+        <room_name>Path to Gaias Navel </room_name>
+        <text>The path to Gaias Navel.</text>
+        <exit name="Pandora" link="Pandora" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Gaias Navel Forest 2" link="Gaias Navel Forest 2" dir="west" req= "None" locked="False"> </exit>
+        <monster name = "Buzz Bee" health = '220' exp = '45' damage = '9' boss = 'False' gold = '5' score = '10'> </monster>
+
+    </building>
+
+    <building room= "Gaias Navel Forest 2">
+        <room_name>Road to Gaias Navel</room_name>
+        <text>The road to Gaias Navel passes through a thick forest.</text>
+        <exit name="Gaias Navel Forest" link="Gaias Navel Forest" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Gaias Navel" link="Gaias Navel" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Cannon Travel Service" link="Cannon Travel Service" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gaias Navel">
+        <room_name>Gaias Navel</room_name>
+        <text>You are standing in front of Gaias Navel, a huge cave system... I wonder how deep it is?</text>
+        <exit name="Gaias Navel Forest 2" link="Gaias Navel Forest 2" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Gaias Navel Interior Passage" link="Gaias Navel Interior Passage" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gaias Navel Interior Passage">
+        <room_name>Gaias Navel</room_name>
+        <text>Inside Gaias Navel, you truly begin to understand how huge it is.</text>
+        <exit name="Gaias Navel" link="Gaias Navel" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Gaias Navel Interior" link="Gaias Navel Interior" dir="west" req= "None" locked="False"> </exit>
+        <item name="candy">Heals the player to full health.</item>
+        <monster name = "Buzz Bee" health = '220' exp = '45' damage = '9' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Gaias Navel Interior">
+        <room_name>Gaias Navel</room_name>
+        <text>Inside Gaias Navel, you truly begin to understand how huge it is.</text>
+        <exit name="Gaias Navel Interior Passage" link="Gaias Navel Interior Passage" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Dwarf Village" link="Dwarf Village" dir="west" req= "None" locked="False"> </exit>
+
+    </building>
+
+    <building room= "Dwarf Village">
+        <room_name>Gaias Navel</room_name>
+        <text>I can't believe an entire town is underground.</text>
+        <exit name="Gaias Navel Interior" link="Gaias Navel Interior" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Dwarf Village Inn" link="Dwarf Village Inn" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Earth Dungeon" link="Earth Dungeon" dir="south" req= "None" locked="False"> </exit>
+        <town_text> Randi: What on earth! Something's coming!
+                                                      ,--,  ,,-,
+                ,                   \,       '-,-`,'-,' | ,_
+               /|           \    ,   |\         }  )/  / `-,',
+               [ '          |\  /|   | |        /  \|  |/`  ,`
+               | |       ,,`  `,` `, | |  _,,,,(   (      _',
+               \  \  __ ,-` `  ,  , `/ |,'      Y     (   \_L\
+                \  \_\,``,   ` , ,  /  |         )         _,/
+                 \  '  `  ,_ _`_,-,[,_,[        /         /
+                  ', `>,,`  `  `   ,,, |_      |         /
+                    \/`  `,   `   ,`  | /__,,-`    _,   `\
+                -,-,,\  _  \  `  /  ,  / `,_) _,-\`       \
+                 \_,,,) /\    ` /  / ) (-,, ``    ,        |
+                ,` )  | \_\       '-`  |  `(               \
+               /  /```(   , --, ,' \   |`[`    ,            |
+              /  /_,--`\   [\  V /] ,` ),_/)  | \      _____)
+        ,-, ,`   `   (_,\ \    |   /) / __/  /   `----`
+       (-, \           ) \ ('_,-,_)/ /,`    /
+       | /  `          `/ \\ V   V, /`     /
+    ,--\(        ,     [_/`\\     ||      /
+   (   ,``-     \/|         \-A,A-`|     /
+  ,>,_ )_,,,(    )\          -,,_-`  _--`
+ (_ \|`   _,/_  /  \_            ,--`
+  \( `   [,,,,/`     `-,,_   _,-`
+   `                      ```
+        </town_text>
+        <monster name = "Tropicallo" health = '550' exp = '500' damage = '24' boss = 'True' gold = '5' score = '250'> </monster>
+    </building>
+
+    <building room= "Dwarf Village Inn">
+        <room_name>Dwarf Village Inn</room_name>
+        <text>A cozy inn near the center of town.</text>
+        <exit name="Dwarf Village" link="Dwarf Village" dir="east" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Earth Dungeon">
+        <room_name>Gaias Navel</room_name>
+        <text>This must be the Earth Dungeon of legend.</text>
+        <exit name="Dwarf Village" link="Dwarf Village" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Earth Dungeon Hall" link="Earth Dungeon Hall" dir="south" req= "None" locked="False"> </exit>
+        <party member = '1'> </party>
+        <town_text>
+
+Elder: Thank you very much!.
+
+Sprite: I didn't need your help!.
+
+Elder: Hey! Sorry about that, This child received such a shock from drifting
+here, it lost all its memories, It really is a nice child, It plays
+tricks on people sometimes though.
+
+Sprite: Come on old timer! Give me a break. Take it easy!.
+
+Elder: Tropicalla broke out of a sealed palace. there must be a way into it!.
+Your memory might return if you receive some power from the Mana Seed.
+
+Sprite: What? Really? I'll go now, right now!!!.
+
+Elder: Not alone! The palace was buried. There must be tons of monsters by
+now, Would you be so kind as to accompany this sprite to the palace?
+What luck! Dod you hear that, little one?.
+
+Sprite: Hey, "brother!".
+
+Hero: "Brother?" My NAME is Hero!.</town_text>
+
+    </building>
+
+    <building room= "Earth Dungeon Hall">
+        <room_name>Gaias Navel</room_name>
+        <text>This must be the Earth Dungeon of legend.</text>
+        <exit name="Earth Dungeon" link="Earth Dungeon" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Earth Dungeon Seed Room" link="Earth Dungeon Seed Room" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Goblin" health = '225' exp = '45' damage = '21' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Earth Dungeon Seed Room">
+        <room_name>Gaias Navel</room_name>
+        <text>This must be the Earth Dungeon of legend.</text>
+        <exit name="Earth Dungeon Hall" link="Earth Dungeon Hall" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Fire Gigas" health = '750' exp = '950' damage = '21' boss = 'True' gold = '5' score = '300'> </monster>
+        <town_text>  _,!,_
+                    /O*@*O\
+                   [\@(_)@/]
+          ,;,   ,--;`     `;--,   ,
+          O@O_ /   |d     b|   \ _hnn
+          | `/ \   |       |   / \` |
+          %%%%  :##;\     /;##;  %%%%
+          |  \ / `##/|   |##'  \ /  |
+          \   %%%%`[/|   |#'`%%%%   /
+           ',_|_ \   |   |'  / _|_,'
+             _/  /   \   \   \  \
+            / (\(     ',  '-,_%%%%
+           (  ()##,    o'--,,_`\-)
+            '-():`##########'()()()
+             /:::::/()`Y`()\:::::\
+        jgs  \::::( () | () )::::/
+              `"""`\(),',()/'"""`</town_text>
+        <item name="earth seed">The Earth Seed... one of the eight seeds I need to repower the Mana Sword.</item>
+    </building>
+
+    <building room= "Cannon Travel Service">
+        <room_name>Gaias Navel</room_name>
+        <text>The fastest way to travel in the kingdom of Pandora.</text>
+        <exit name="Upperland Village" link="Upperland Village" dir="north" req= "travel pass" locked="True"> </exit>
+        <exit name="Gaias Navel Forest 2" link="Gaias Navel Forest 2" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Upperland Village">
+        <room_name>Upperland</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Upperland 1" link="Upperland 1" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mantango" link="Mantango" dir="east" req= "thunder seed" locked="True"> </exit>
+        <monster name = "Pebbler" health = '350' exp = '75' damage = '35' boss = 'False' gold = '5' score = '10'> </monster>
+        <town_text>Hero: Sprite, your home's here in the Great Forest, right? Lead on!
+
+Sprite: Um, Huh? I hit my head again when we landed.
+
+Princess: Lovely, this might take a while.</town_text>
+    </building>
+
+    <building room= "Upperland 1">
+        <room_name>Upperland</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Upperland Village" link="Upperland Village" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Upperland 2" link="Upperland 2" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Upperland 2">
+        <room_name>Upperland North West</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Upperland 1" link="Upperland 1" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Thunder Palace" link="Thunder Palace" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Thunder Palace">
+        <room_name>Thunder Palace</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Upperland 2" link="Upperland 2" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Thunder Palace Seed Room" link="Thunder Palace Seed Room" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Boss Jabberwocky" health = '1500' exp = '450' damage = '42' boss = 'True' gold = '5' score = '350'> </monster>
+        <town_text>                               /T /I
+                              / |/ | ,-~/
+                          T\ Y  I  |/  /  _
+         /T               | \I  |  I  Y,-~/
+        I l   /I       T\ |  |  l  |  T  /
+     T\ |  \ Y l  /T   | \I  l   \ `  l Y
+ __  | \l   \l  \I l __l  l   \   `  _, |
+ \ ~-l  `\   `\  \  \\ ~\  \   `, ,-~   |
+  \   ~-, "-,  `  \  ^,_ ^, "-,  /  \   |
+,--~-,_  ~-  `  _  ~-_,-"-," ,_ /,_ ," ,/
+ >--,  ~-,   ,_  ~>-"    "\\   7   7   ]
+^,___~"--,_    ~-{  ,-~ ,  `\ Y , /    |
+ [__ ~"-,  ~       /_/   \   \I  Y   : |
+   ^-,__           ~(_/   \   >,_:   | l______
+       ^--,,___,-~"  /_/   !  `-,~"--l_ /     ~"-,
+              (_/ ,  ~(   /'     "~"--,Y   -=b-, _)
+               (_/ ,  \  :           / l      c"~o \
+                \ /    `,    ,     ,^   \_,-~"~--,  )
+                 (_/ ,   `  /     /       !       )/
+                  / / _,   ',   ,':      /        '
+                  ~(_/ ,   /    _  `  ,-[_
+                    /_/ , ' ,-~" `,  / \  \          ,z=,
+                    ~( /   '  :   | K   "-,~-,______//
+                      "-,,    l   I/ \_    __{--->,_(==,
+                       //(     \  [    ~"~"     //
+                      /' /\     \  \     ,v=,  ((
+                    ,^, / /\     "  }__ //===-  `
+                   / / ' '  "-,,__ {---(==-
+                 ,^ '       :  T  ~"   ll
+                / ,  ,  , : | :!        \\
+               (_/  /   | | j-"          ~^
+                 ~-[_(_,^-~"</town_text>
+    </building>
+
+    <building room= "Thunder Palace Seed Room">
+        <room_name>Thunder Palace</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Thunder Palace" link="Thunder Palace" dir="south" req= "None" locked="False"> </exit>
+        <item name="thunder seed">The third seed needed to repower the Mana Sword.</item>
+    </building>
+
+
+    <building room= "Mantango">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Upperland" link="Upperland" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves" link="Mantango Caves" dir="north" req= "None" locked="False"> </exit>
+        <item name="candy">Heals the player to full health.</item>
+        <exit name="Mantango Canon Travel Service" link="Mantango Canon Travel Service" dir="east" req= "None" locked="False"> </exit>
+        <town_text>
+Truffle: Here at last! The legendary knight!
+
+Hero: ?
+
+Truffle: You don't think we have legends here like everywhere else?!
+
+                  Riding a white dragon, and
+                   wielding The Sword, they
+                    shall save the world.
+
+Truffle: That's you guys, right? I knew it right away! Just yesterday one of
+my people saw a white dragon fighting a huge snake! Go save it!
+</town_text>
+    </building>
+
+    <building room= "Mantango Caves">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango" link="Mantango" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves 2" link="Mantango Caves 2" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Pebbler" health = '500' exp = '75' damage = '35' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mantango Caves 2">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango Caves" link="Mantango Caves" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves 3" link="Mantango Caves 3" dir="north" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Mantango Caves 3">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango Caves 2" link="Mantango Caves 2" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves 4" link="Mantango Caves 4" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Pebbler" health = '500' exp = '75' damage = '35' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mantango Caves 4">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango Caves 3" link="Mantango Caves 3" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves 5" link="Mantango Caves 5" dir="north" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Mantango Caves 5">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango Caves 4" link="Mantango Caves 4" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mantango Caves 6" link="Mantango Caves 6" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Great Viper" health = '1650' exp = '3500' damage = '35' boss = 'True' gold = '350' score = '10'> </monster>
+        <town_text>
+       ---_ ,,,,,,,_-_--,
+      (|\ /      / /| \  \
+      /  /     ,'  -=-'   `,
+     /  /    ,'             )
+   _/  /   ,'        _,)   /
+  / o   o        _,-' /  ,'
+  \          _,-'    / ,'*|
+   \______,-'//    ,',' \*|
+    \|  \ | //   ,',' _ |*|
+     `   \|//  ,','_ _ _|*|
+      ,  ,// ,',' | _ _ \*|
+      \`-|\_/ /    \ _ _ \*\
+       `/'\__/      \ _ _ \*\
+      /^|            \ _ _ \*
+     '  `             \ _ _ \      ASH (+VK)
+                       \_</town_text>
+    </building>
+
+    <building room= "Mantango Caves 6">
+        <room_name>Mantango</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <item name="gun powder">Extra gun powder for the Matango Cannon Travel, we should be able to get to the desert with this.</item>
+        <exit name="Mantango Caves 5" link="Mantango Caves 5" dir="south" req= "None" locked="False"> </exit>
+
+
+        <town_text> THIS is the legendary white dragon? Its parents must have been beaten by that
+serpent.
+
+Princess: it won't make it if we leave it here. It's way too big for us to
+     carry! Let's ask Truffle.
+
+(Back in Throne Room)
+
+Truffle: He'll only slow you down, so I'll raise him!
+
+Nobleman: King Truffle!
+
+Truffle: QUIET, you! You three get going. I'll take good care of him! By the
+      way, how do you like the name "Flammie?"
+
+ ( Ugh! Not bad! )
+
+Truffle: Hang on! I sound like an idiot! You'd agree with me whether you
+liked the name or not! So let's call him "Flammie" and be done with
+it! Cannon Travel is open again in the forest to the south. You'll
+find the Fire Palace somewhere in the Desert of Kakkara.
+
+        </town_text>
+    </building>
+
+
+
+    <building room= "Mantango Canon Travel Service">
+        <room_name>Mantango Canon Travel Service</room_name>
+        <text>The upperland is nothing but forest as far as the eye can see.</text>
+        <exit name="Mantango" link="Mantango" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Kakkaran Desert Outskirts of Town" link="Kakkaran Desert Outskirts of Town" dir="north" req= "gun powder" locked="True"> </exit>
+    </building>
+
+    <building room= "Kakkara">
+        <room_name>Kakkara</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkara Inn" link="Kakkara Inn" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Kakkara Canon Travel Service" link="Kakkara Canon Travel Service" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Kakkaran Desert Outskirts of Town" link="Kakkaran Desert Outskirts of Town" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Kakkara Inn">
+        <room_name>Kakkara Inn</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkara" link="Kakkara" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Kakkara Canon Travel Service">
+        <room_name>Kakkara Canon Travel Service</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkara" link="Kakkara" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Mantango" link="Mantango" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Pandora" link="Pandora" dir="west" req= "None" locked="False"> </exit>
+        <exit name="The Lofty Mountains" link="The Lofty Mountains" dir="north" req= "fire seed" locked="True"> </exit>
+    </building>
+
+    <building room= "Kakkaran Desert Outskirts of Town">
+        <room_name>Kakkaran Desert</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkara" link="Kakkara" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Kakkaran Dessert North" link="Kakkaran Dessert North" dir="south" req= "None" locked="False"> </exit>
+        <town_text>
+Sprite: Pfepp, pfepp! Ick, covered with sand!
+
+Princess: What a barren place.
+Hero: Let's find a town before we shrivel up!.
+
+Sprite: Throat's, so dry, can't go on!
+Hero: We're finished.
+Princess: Look! Over there! Hurry!</town_text>
+        <monster name = "Chobin Hood" health = '300' exp = '150' damage = '25' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Kakkaran Dessert North">
+        <room_name>Kakkaran Dessert North</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkaran Desert Outskirts of Town" link="Kakkaran Desert Outskirts of Town" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Kakkaran Desert Central" link="Kakkaran Desert Central" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Chobin Hood" health = '750' exp = '150' damage = '25' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Kakkaran Desert Central">
+        <room_name>Kakkaran Desert Central</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkaran Dessert North" link="Kakkaran Dessert North" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Kakkaran Desert South" link="Kakkaran Desert South" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Lunar Palace" link="Lunar Palace" dir="west" req= "dark seed" locked="True"> </exit>
+    </building>
+
+    <building room= "Lunar Palace">
+        <room_name>Lunar Palace</room_name>
+        <text>What an odd place... No up, no down...what is going on here?</text>
+        <exit name="Kakkaran Desert Central" link="Kakkaran Desert Central" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Lunar Palace Exterior" link="Lunar Palace Exterior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Moonblob" health = '750' exp = '450' damage = '25' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Lunar Palace Exterior">
+        <room_name>Lunar Palace Exterior</room_name>
+        <text>What an odd place... No up, no down...what is going on here?</text>
+        <exit name="Lunar Palace" link="Lunar Palace" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Lunar Palace Interior" link="Lunar Palace Interior" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Lunar Palace Interior">
+        <room_name>Lunar Palace Interior</room_name>
+        <text>What an odd place... No up, no down...what is going on here?</text>
+        <exit name="Lunar Palace Exterior" link="Lunar Palace Exterior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Lunar Palace Seed Room" link="Lunar Palace Seed Room" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Moon Dragon" health = '750' exp = '20000' damage = '50' boss = 'True' gold = '5' score = '400'> </monster>
+        <town_text>           \__,,,,        \               _-/
+                                 \__,,,       \            _-/
+                                    \_,,       \         _//
+                                      \,,       \      _/_/                  __
+    __--------_____              __----///--___ \    _/_/                 __/
+ _---___/___     ------____|   _/    ,/,     | \_  _/,/                __/
+` /-  -/    ----___        \\ /     ,\,     //  _--,,(              __/
+  `   ,/         \_---__   \\/     ,/,      // -  ,,,|_/         __/
+                   --__/   \ \     ,/,     / /    __-- -----____/_______
+                ---_) ---__ \ \_   ,\,   _/ / __--- (_---,,,,,,,,,,,,,,,---_
+                  \_      -- \___---/---___/ --      _/,,,,,,,,,,,,,,,,,,,,,\
+                 __--_      |\_,,,,,\,,,,,_/|      _--__   ,,,,,,,,,,,  ,,,,,\
+                      -___/ |\\_,,,,/,,,,_//| \___-            _______   ,,,,,\
+                           |,\_ --_,\,_-- _/,|        ____-----       \_  ,,,,\
+                            |,,--__\,/__--,,|  -__----  ,,\_            \  ,,,,
+                             \ ,,,\|,|/,,, /              ,,\            \  ,,,
+                              \ ,,\|,|/,, /                 ,\            \  ,,
+                              ) ,,\|,|/,, (                  ,\          _/, ,,
+                              /_---------_\                   ,\       _/_--__,
+                             /  \,,,,,,,/  \                   \\_    (/      \
+                          __-,\_ \_,,,_/ _/                    |,,\_   `      /
+   _____--------_______-_/,,,,\ --_____-- /                    |,,,,\_       '
+----                  _/,,,,,, \, (` ') ,/                    /   ,,,,\
+                    _/,,,,,,    \_,   ,_/                    /      ,,,\
+_____--------___   /,,,,,,      __-----                   __/\      ,,,\
+                --/,,,,     _--__                    ___--    \     ,,,|
+---_____         /,,,,,  _--/,,,,)            ____---       __/    ,,,/   _____
+_----------___  /,,,,   /---____--______-------             (_   ______----</town_text>
+    </building>
+
+    <building room= "Lunar Palace Seed Room">
+        <room_name>Lunar Palace Seed Room</room_name>
+        <text>What an odd place... No up, no down...what is going on here?</text>
+        <exit name="Lunar Palace Exterior" link="Lunar Palace Exterior" dir="north" req= "None" locked="False"> </exit>
+        <item name="lunar seed">The sixth seed needed to repower the Mana Sword.</item>
+    </building>
+
+    <building room= "Kakkaran Desert South">
+        <room_name>Kakkaran Desert South</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkaran Desert Central" link="Kakkaran Desert Central" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Fire Palace Exterior" link="Fire Palace Exterior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Chobin Hood" health = '750' exp = '150' damage = '25' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Fire Palace Exterior">
+        <room_name>Fire Palace Exterior</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Kakkaran Desert South" link="Kakkaran Desert South" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Fire Palace Interior" link="Fire Palace Interior" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Fire Palace Interior">
+        <room_name>Fire Palace Interior</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Fire Palace Exterior" link="Fire Palace Exterior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Fire Palace Seed Room" link="Fire Palace Seed Room" dir="south" req= "None" locked="False"> </exit>
+        <town_text>
+
+    ,-"  ,`)     (
+   j   ,'_+     :[                )      ,^--,,
+  i    -"       |l                ],    /      i
+ ," ,:j         `8o  _,,+,,,--,   d|   `:::;    b
+ i  :'|          "88p;,  (-,"_"-,oP        \,   :
+ ; ,  (            >,%%%   f),):8"          \:'  i
+i  :: j          ,;%%%:; ; ; i:%%%,,        i,   `,
+i  `: ( ____  ,-::::::' ::j  [:```          [8:   )
+[  ,,``'::::8888oooooo,  :(jj(,;,,,         [8::  ]
+`, ``:,      oo,8888888888:;%%%8o,::,+888+o,:`:'  |
+ `,   `        `o`88888888b`%%%%%88 Y888P""'-    ;
+   "`---`,       Y`888888888;;,,"888b,""",,::::'-'
+          "-,,,,  b`8888888:::::,`8888,_::-"
+             `:::, `:::::O:::::::,`%%'|
+              `,      "``::::::''    ,'
+                `,                   [
+                  +:         `:   -';
+                   `:         : ,::/
+                    ;+_  :::, :,,;;;
+                    ;;;;,;;;;;;;;,;;
+
+                                                             </town_text>
+        <monster name = "Minotaur" health = '2100' exp = '1200' damage = '80' boss = 'True' gold = '5' score = '450'> </monster>
+    </building>
+
+   <building room= "Fire Palace Seed Room">
+        <room_name>Fire Palace Seed Room</room_name>
+        <text>What a desolate place... How can people survive here?</text>
+        <exit name="Fire Palace Interior" link="Fire Palace Interior" dir="north" req= "None" locked="False"> </exit>
+        <item name="fire seed">The fourth seed needed to repower the Mana Sword.</item>
+    </building>
+
+    <building room= "The Lofty Mountains">
+        <room_name>The Lofty Mountains</room_name>
+        <text>High up in the Lofty Mountains sits Mandala and the Dark Palace</text>
+        <exit name="Mandala" link="Mandala" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Dark Palace Exterior" link="Dark Palace Exterior" dir="east" req= "None" locked="False"> </exit>
+        <monster name = "VileFlower" health = '600' exp = '450' damage = '45' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mandala">
+        <room_name>Mandala</room_name>
+        <text>The town of Mandala is isolated high up in the lofty mountains.</text>
+        <exit name="The Lofty Mountains" link="The Lofty Mountains" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Mandala Cannon Travel Service" link="Mandala Cannon Travel Service" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Mandala Inn" link="Mandala Inn" dir="west" req= "None" locked="False"> </exit>
+        <town_text>Little boy: Welcome to the Lofty Mountains! This is Mandala.
+Man in Purple: Go down the mountain a bit, and you'll see a cave, Monsters are
+dwelling, but it's the Palace of Darkness!
+        </town_text>
+    </building>
+
+    <building room= "Mandala Inn">
+        <room_name>Mandala Inn</room_name>
+        <text>Looks like a good place to REST!!!.</text>
+        <exit name="Mandala" link="Mandala" dir="east" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Dark Palace Exterior">
+        <room_name>Dark Palace Exterior</room_name>
+        <text>The Dark Palace sits high up in the Lofty Mountains.</text>
+        <exit name="The Lofty Mountains" link="The Lofty Mountains" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Dark Palace Interior" link="Dark Palace Interior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Dark Spirit" health = '650' exp = '600' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Dark Palace Interior">
+        <room_name>Dark Palace Interior</room_name>
+        <text>The Dark Palace sits high up in the Lofty Mountains.</text>
+        <exit name="Dark Palace Exterior" link="Dark Palace Exterior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Dark Palace Seed Room" link="Dark Palace Seed Room" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Vile Slime" health = '2250' exp = '2500' damage = '40' boss = 'True' gold = '5' score = '500'> </monster>
+    </building>
+
+    <building room= "Dark Palace Seed Room">
+        <room_name>Dark Palace Seed Room</room_name>
+        <text>The Dark Palace sits high up in the Lofty Mountains.</text>
+        <exit name="Dark Palace Interior" link="Dark Palace Interior" dir="north" req= "None" locked="False"> </exit>
+        <item name="dark seed">The fifth seed needed to repower the Mana Sword.</item>
+    </building>
+
+    <building room= "Mandala Cannon Travel Service">
+        <room_name>Mandala Cannon Travel Service</room_name>
+        <text>The Dark Palace sits high up in the Lofty Mountains.</text>
+        <exit name="Kakkara" link="Kakkara" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island" link="Gold Island" dir="east" req= "lunar seed" locked="True"> </exit>
+        <exit name="Mandala" link="Mandala" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Island">
+        <room_name>Gold Island</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?
+        </text>
+        <town_text>Man In Green: This is the Empire's Gold City.
+
+Old Man: Where did King Manmon find all this gold.
+
+Woman In Green: It's too expensive to live here.
+
+Woman In Purple: This whole island is made of gold.
+</town_text>
+        <exit name="Gold Island Castle" link="Gold Island Castle" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island Cannon Travel Service" link="Gold Island Cannon Travel Service" dir="east" req= "gold seed" locked="True"> </exit>
+        <exit name="Gold Island Resistance House" link="Gold Island Resistance House" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Gold Island Inn" link="Gold Island Inn" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Island Inn">
+        <room_name>Gold Island Inn</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Island" link="Gold Island" dir="east" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Island Cannon Travel Service">
+        <room_name>Gold Island Cannon Travel Service</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Lost Continent" link="Lost Continent" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island" link="Gold Island" dir="west" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Island Resistance House">
+        <room_name>Gold Island Resistance House</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Island" link="Gold Island" dir="north" req= "None" locked="False"> </exit>
+        <item name="castle key">The key to the Gold Castle.</item>
+    </building>
+
+    <building room= "Gold Island Castle">
+        <room_name>Gold Island Castle</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Island Castle Exterior" link="Gold Island Castle Exterior" dir="north" req= "castle key" locked="True"> </exit>
+        <exit name="Gold Island" link="Gold Island" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Dark Knight" health = '1000' exp = '3500' damage = '50' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Gold Island Castle Exterior">
+        <room_name>Gold Island Castle Exterior</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Island Castle Interior" link="Gold Island Castle Interior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island Castle" link="Gold Island Castle" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Island Castle Interior">
+        <room_name>Gold Island Castle Interior</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Palace Entrance" link="Gold Palace Entrance" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island Castle Exterior" link="Gold Island Castle Exterior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Dark Knight" health = '1000' exp = '3500' damage = '50' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Gold Palace Entrance">
+        <room_name>Gold Palace Entrance</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Palace Hall" link="Gold Palace Hall" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Island Castle Interior" link="Gold Island Castle Interior" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Gold Palace Hall">
+        <room_name>Gold Palace Hall</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Palace Seed Room" link="Gold Palace Seed Room" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Gold Palace Entrance" link="Gold Palace Entrance" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Aegagropilon" health = '2500' exp = '11050' damage = '80' boss = 'True' gold = '5' score = '550'> </monster>
+        <town_text>
+                            |\                                       ___,
+                            ||\_____          /====================>/`,--`
+                            ||    ,(__,      //  ,_____,----------//_:
+                            ||   /    |  ,=='  ,/                / \  \
+                    ,      ,|:  / ,___\_/     /     ,____,------(   \_ \
+                   />\    /[\  \       /       ____'     \,      \   |  \
+                  // /,,,,\ \\__J_____/      ,     \       \,  ___\  |_  \
+                 /'  ~""""~  '\      /        \     \        \/     /     >
+             __|\___~,|  |,~___/|__ /          \     \       /___--'`    /
+             \_  /[d)\,\/,/(6>\  _/       /\    |     \ _____|          /
+             /_  \__>|=\/=|]__/  _\      |  \   |      (               /
+               |/  |~>====]~|  \|            \  | _____|              /
+                \  \[o____o]/  /              \ |/                 |,/
+               / \  >VvvvvV[  /                \/     \            \__,
+              /,^,\_\ |  | /_/     \        |          \             /
+         _,--'`: :,-//\^^/\\ `,     |      /    ,______=\_____,     /
+          `--,__,__-\======/   `====|     |===='    `---,    /     /
+                     ~~~~~~         |     |            /    /     /
+                                  __/     \__       __|    |     |
+                                 /---^,=,^---\     /---^,=_/     \__
+                                 '     V     '     '    /---^,=,^---\</town_text>
+    </building>
+
+    <building room= "Gold Palace Seed Room">
+        <room_name>Gold Palace Seed Room</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Palace Hall" link="Gold Palace Hall" dir="south" req= "None" locked="False"> </exit>
+        <exit name="Gold Palace Roof" link="Gold Palace Roof" dir="east" req= "None" locked="False"> </exit>
+        <item name="gold seed">The seventh seed needed to repower the Mana Sword.</item>
+    </building>
+
+    <building room= "Gold Palace Roof">
+        <room_name>Gold Palace Roof</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Gold Palace Seed Room" link="Gold Palace Seed Room" dir="west" req= "None" locked="False"> </exit>
+        <monster name = "Mech Rider" health = '2750' exp = '12000' damage = '80' boss = 'True' gold = '5' score = '575'> </monster>
+        <item name="flammie drum">I can call Flammie, and travel anywhere.</item>
+        <town_text>Voice: Helloow!
+
+Hero: That, that's Truffle!
+
+Truffle: Am I too late? Do you want to know HOW I came here? By Flammie! He
+grew like a weed, and started to fly! I didn't know what to do, so I just
+hopped on! Strange, but he thinks you're his parents! I guess he wants to help
+you. Take this Flammie Drum. It's his favorite toy. Use it anywhere and he'll
+come to you!</town_text>
+    </building>
+
+    <building room= "Lost Continent">
+        <room_name>Lost Continent</room_name>
+        <text>I can't believe there is an entire island made out of gold, where did it all come from?</text>
+        <exit name="Lost Continent Camp" link="Lost Continent Camp" dir="west" req= "None" locked="False"> </exit>
+        <exit name="Lost Continent Palace Exterior" link="Lost Continent Palace Exterior" dir="north" req= "None" locked="False"> </exit>
+        <town_text>Jema: Hero! The sunken continent has surfaced. The Fortress is there! I've
+brought troops here to keep the Empire from taking the Mana Fortress.
+There's an ancient city under this Grand Palace. We must get into it! Emperor Vandole
+is working for the underworld.
+
+This place is full of monsters! Though your
+sword isn't fully powered, you need it to stop the Emperor! We'll fight off the
+Imperial troops here, You catch up with those soldiers.
+
+Soldier 1: Be careful!</town_text>
+    </building>
+
+    <building room= "Lost Continent Camp">
+        <room_name>Lost Continent Camp</room_name>
+        <text>Looks like a good place to rest.</text>
+        <exit name="Lost Continent" link="Lost Continent" dir="east" req= "None" locked="False"> </exit>
+        <monster name = "Gold Knight" health = '1000' exp = '3500' damage = '50' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Lost Continent Palace Exterior">
+        <room_name>Lost Continent</room_name>
+        <text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea. </text>
+        <exit name="Lost Continent Palace Interior" link="Lost Continent Palace Interior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Lost Continent" link="Lost Continent" dir="south" req= "None" locked="False"> </exit>
+    </building>
+
+    <building room= "Lost Continent Palace Interior">
+        <room_name>Lost Continent</room_name>
+        <text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text>
+        <exit name="Lost Continent Palace Hall" link="Lost Continent Palace Hall" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Lost Continent Palace Exterior" link="Lost Continent Palace Exterior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Gold Knight" health = '1000' exp = '3500' damage = '50' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Lost Continent Palace Hall">
+        <room_name>Lost Continent</room_name>
+        <text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text>
+        <exit name="Lost Continent Palace Seed Room" link="Lost Continent Palace Seed Room" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Lost Continent Palace Interior" link="Lost Continent Palace Interior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "The Emperor" health = '3500' exp = '100000' damage = '75' boss = 'True' gold = '5' score = '2500'> </monster>
+    </building>
+
+    <building room= "Lost Continent Palace Seed Room">
+        <room_name>Lost Continent</room_name>
+        <text>The Palace sits atop the ruins of an ancient civilization that sank beneath the sea.</text>
+        <exit name="Lost Continent Palace Hall" link="Lost Continent Palace Hall" dir="south" req= "None" locked="False"> </exit>
+        <item name="tree seed">The final seed needed to repower the Mana Sword. I can go to the Mana Fortress now.</item>
+        <town_text>(Dryad appears)
+
+Get out of here, NOW! I am Dryad, the tree spirit. The seals on the world's
+seeds have been broke, The continent that sleeps beneath this palace will
+soon rise, Leave now.
+
+Princess: What about you?
+
+Dryad: I wasn't able to save this palace, I'll go down with it.
+
+Sprite: Idiot! What will that serve? Come! Help us save Mana.
+
+Dryad: Thanatos sealed my "Mana" magic, I won't be of much help.
+
+Princess: Don't worry! Let's go.
+
+Hero: Hurry!
+
+Dryad: Well, okay, I'll do what I can.</town_text>
+    </building>
+
+    <building room= "Mana Fortress">
+        <room_name>Mana Fortress</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Exterior" link="Mana Fortress Exterior" dir="west" req= "None" locked="False"> </exit>
+        <item name="tree seed">The final seed needed to repower the Mana Sword.</item>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Exterior">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress" link="Mana Fortress" dir="east" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior" link="Mana Fortress Interior" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Exterior" link="Mana Fortress Exterior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 2" link="Mana Fortress Interior 2" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 2">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior" link="Mana Fortress Interior" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 3" link="Mana Fortress Interior 3" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 3">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 2" link="Mana Fortress Interior 2" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 4" link="Mana Fortress Interior 4" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score ='10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 4">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 3" link="Mana Fortress Interior 3" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 5" link="Mana Fortress Interior 5" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 5">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 4" link="Mana Fortress Interior 4" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 6" link="Mana Fortress Interior 6" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 6">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 5" link="Mana Fortress Interior 5" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 7" link="Mana Fortress Interior 7" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 7">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 6" link="Mana Fortress Interior 6" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Interior 8" link="Mana Fortress Interior 8" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Evil Head" health = '1200' exp = '7500' damage = '40' boss = 'False' gold = '5' score = '10'> </monster>
+    </building>
+
+    <building room= "Mana Fortress Interior 8">
+        <room_name>Lost Continent</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 7" link="Mana Fortress Interior 7" dir="north" req= "None" locked="False"> </exit>
+        <exit name="Mana Fortress Final Area" link="Mana Fortress Final Area" dir="south" req= "None" locked="False"> </exit>
+        <monster name = "Dark Lich" health = '6500' exp = '12500000' damage = '85' boss = 'True' gold = '5' score = '2500'> </monster>
+        <town_text>
+
+Thanatos: For ages I have been searching, for a human with the power to
+conquer this world, one born in the shadow of darkness, and raised in the
+light of Mana. Dyluck is the one. I cannot wait any longer. My body has grown
+weak! It is time! Using his body I will take the Mana Fortress, and rule the
+world!
+
+Princess: Dyluck! Resist him with all your might!
+
+Thanatos: Uhrg, ahh, kack! I must, hurry, This body is, breaking up!
+H, help me, guhuf,let, m maieee!
+
+Princess: Dyluck! Snap out of it!
+
+Dyluck: Uhhn, Where am I? Guwa ha ha!
+
+Thanatos:  Guwa ha ha! How good this new body feels! I grow strong!
+
+Princess: Liar! You can't just STEAL someone's body!!
+
+Thanatos: My dear, I can do anything I want! Ha, ha-huh? Can't, move!
+Princess, can you hear me? It's me, Dyluck, He's too strong, I'm finished,
+but I can help you,  Thanatos is an ancient sorcerer who sold his heart to the
+underworld.
+
+Though his life force is eternal, he hasn't his own body. His life
+force is growing darker, He feeds on hatred and destruction!
+
+Thanatos: Ooh! Silence!
+
+Dyluck: Princess: I'm so sorry I won't see you again, But I have to do this.
+
+Dyluck: You're Hero, right? Take care of Princess.
+
+Princess: Dyluck! Stop it! Please! Dyluck! STOP IT!!
+
+Thanatos: Ugrrrrrrr!
+
+(Thanatos changes into Dark Lich)
+
+Thanatos: I forbid this! Just when I was to be reborn! I must withdraw! Give
+me your bodies! GUWAA!
+
+                    `"-,_
+                      `, "-,_
+                        T,   "-,
+                         $$p,   "-,
+                         $$$$b,    `,
+                      ,g$$$$$$$b    ;
+                    ,d$$$$$$$$$$;   ;
+                 __d$$$$$$P""^T$$   :
+               ,d$$$$P^^""___       :
+              d$P'__,,gg$$$$$$$$$$; ;
+             d$$ :$$$$$$$$$$$$$$$$;  ;
+            :$$; $$$$$$$$$$$$$$$$P  :$
+            $$$  $$$$$$$$$$$$$$$$b  $$
+           :$$$ :$$$$$$$$$$$$$$$$$; $$;
+           $$$; $$$$$$$$$$$$$$$$$$; $$;
+          :$$$  $$$$$$$$$^$$$$$$$$$ :$$
+          $$$; :$$$p__gP' `Tp__g$$$ :$$
+         :$$$  $$P`T$P' ,$, `T$P'T$; $$;
+         $$$; :$$;     :P^T;     :$; $$;
+        :$$$  $$$$-,           ,-$$$ :$$
+        $$$$ :$$$$; \   T$P   / :$$$  $$
+       :$$$; $$$$$$  ; b:$;d :  $$$$; $$;
+       $$$$; $$$$$$; : T T T ; :$$$$$ :$$
+    ,g$$$$$  :$$$$$$  ;' | ':  $$$$$$  T$b
+ ,g$$$$$$$$   $$$$$$b :     ; d$$$$$;   `Tb
+:$$$$$$$$$;   :$$$$$$$;     :$$$$$$P       \
+:$$$$$$$$$;    T$$$$$$$p,_,g$$$$$$P         ;
+$$$P^^T$$$$p,   `T$$$$$$$$$$$$$$P'     _/`, :
+       `T$$$$$b,  `T$$$$$$$$$$P'    ,g$P   \;
+         `T$$$$$b,  "^T$$$$P^"     d$P'
+           `T$$$$$b,             ,dP'
+             "^T$$$$b,        ,g$P'
+                "^T$$$b    ,g$P^"
+                   "^T$b,g$P^"
+                      "^$^"
+
+
+        </town_text>
+         <item name="Mana Sword">The ultimate weapon needed to defeat the Mana Beast.</item>
+    </building>
+
+    <building room= "Mana Fortress Final Area">
+        <room_name>Mana Fortress Final Area</room_name>
+        <text>The legendary Mana Fortress... We've got to hurry.</text>
+        <exit name="Mana Fortress Interior 8" link="Mana Fortress Interior 8" dir="north" req= "None" locked="False"> </exit>
+        <monster name = "Mana Beast" health = '15000' exp = '2500000' damage = '150' boss = 'True' gold = '5' score = '9999' endcode = '1'> </monster>
+        <town_text>Princess: Ooh! Dyluck!!!
+
+Hero: What the?! Let's get out of here!
+
+Sprite: Uwaa!
+
+Hero: What is is?
+
+Sprite: whew! I'm okay just dizzy! We have to get out of here, NOW!
+
+(Outside)
+
+Sprite: It's a Mana Beast!
+
+Sprite: Hurry, or the Mana Beast will ruin the world! Come on! Do it!
+
+Hero: I can't, I won't hurt a Mana Beast! I can't! They are only trying to
+restore Mana! And, Sprite! If you use up all your Mana power, you'll
+disappear!
+
+Princess: Oh NO!
+
+Hero: Right, I can't go through with this.
+
+Sprite: Whaddaya mean? I'm NOT gonna kick the bucket! My world is
+seperate from this one. It just means I won't, see you again. ok, if we don't
+stop the Mana Beast, your world is finished, right? Everything will perish.
+Trees,animals, PEOPLE! That must not happen! YOU have the Mana Sword, YOU
+must save this world, YOU have no choice! You made a vow to your mother, the
+Mana Tree, right? I'll be okay.
+
+Hero: All right, you're sure?
+
+Sprite: OF COURSE! Later, Princess!
+
+                                     /|   /|
+                                    / /  / /
+                                   | |  | |
+                                   ; /  ; /
+                     ___  __      / ,\_/ ,(   ___
+                    /  {,' {     / ;;;/ ;;;`"`_,-'
+                 ,--'-,/ ,-'    / ;;;/ ;;' ,-'
+              _,-` _  `;;\_,   / ;;;/ ,' ,/
+          ,-"` ;-= g>=- ,; /  / ;;;/ ;',;;|
+           \`__/_     ; ';|  | ;;;/,',;;;;'\___,
+     _    ,=,-V-' __  ;;  _\ /,;/`,`,'` ,,:---'
+     `"=="  |_,-'`  7_;;  | | ;|  ,',;;;;;/
+                   /_,;'  /  \'\ `,;;;;;;|
+                  {_,;'^ _\  /;;),,,,,,`'\
+                 {_;;' ^|   /;/`,;;;;;;;-'`
+                {_,;'^  _\ //`,,,,`_';/
+               (__;;  ^  \/`,;;;;;( ',|
+               (__,;,^ ,'`,;;,,`';;      _,-/
+               (__,';,/ ,;',`;;;,,_\  _,'  (
+                (__,';|/|;';;,';/` ,-' _   /
+                 (__,-';|; ;;;, |,_  `//)_/
+                  (_/ '- \,'``\ | `',//
+                ,-' |'-' '-'';|/ ^   ';
+               /'-' | '-' '-' ;`;;,^   `\
+              /  '-' \  '-' '/\_, ';,  ^ \
+              |'-' ,-'\-' '-'|  \_,';,  ^ \
+         _ jgs \  /    ','-' \  //\_,; ^  |
+       ,_v\     \ |      \ '-( |;/ \_ ;   |
+       v_\ `---_-' \      ;  / |;|  [_; ^ |
+       (,-')(`` `'-'      | /  | ;`=';'  ;
+        v  [/             ||    \ `'`  ^/
+                          ||     '-,,,-'
+                          ||
+                     __  / |_
+                   v-=_;` __ `)
+                   v-(_,-'  `v
+                      v
+
+</town_text>
+    </building>
+
+
+</map>
